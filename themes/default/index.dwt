@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS|{$page_title}" href="{$feed_url}" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,jquery.js,png.js,ndyih_common.js'}
+</head>
+<body>
+<div id="outWrap">
+  <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+  <div id="mainGallery" class="pngImg">
+    <ul class="mGallery_f">
+       <li class="proImg"><a href="#" target="blank" alt="" title=""
+        ><img src="images/tmp_1.png" class="pngImg"></a></li>
+       <li class="proInfo"><a href="#" class="proName">XXXXX鞋</a><span 
+        class="proPrice">￥128</span></li>
+    </ul>
+    <ul class="mGallery_s">
+       <li class="proImg"><a href="#" target="blank" alt="" title=""
+        ><img src="images/tmp_1.png" class="pngImg"></a></li>
+       <li class="proInfo"><a href="#" class="proName">XXXXX鞋</a><span 
+        class="proPrice">￥128</span></li>
+    </ul>
+    <ul class="mGallery_t">
+       <li class="proImg"><a href="#" target="blank" alt="" title=""
+        ><img src="images/tmp_1.png" class="pngImg"></a></li>
+       <li class="proInfo"><a href="#" class="proName">XXXXX鞋</a><span 
+        class="proPrice">￥128</span></li>
+    </ul>
+  </div>
+  <div id="indexContainer">
+    <!---list_1---->
+    <div class="proListBox">
+      <div class="proType pngImg"></div>
+      <ul class="indexPros">
+        <li class="product">
+          <a href="#" class="proImg"><img src="images/tmp_img_03.jpg"></a
+          ><a href="#" class="proName">xxx靴子</a
+          ><span class="proInfo">￥200</span>
+        </li>
+        <li class="product">
+          <a href="#" class="proImg"><img src="images/tmp_img_03.jpg"></a
+          ><a href="#" class="proName">xxx靴子</a
+          ><span class="proInfo">￥200</span>
+        </li>
+        <li class="product">
+          <a href="#" class="proImg"><img src="images/tmp_img_03.jpg"></a
+          ><a href="#" class="proName">xxx靴子</a
+          ><span class="proInfo">￥200</span>
+        </li>
+        <li class="product">
+          <a href="#" class="proImg"><img src="images/tmp_img_03.jpg"></a
+          ><a href="#" class="proName">xxx靴子</a
+          ><span class="proInfo">￥200</span>
+        </li>
+        <li class="product">
+          <a href="#" class="proImg"><img src="images/tmp_img_03.jpg"></a
+          ><a href="#" class="proName">xxx靴子</a
+          ><span class="proInfo">￥200</span>
+        </li>
+      </ul>
+    </div>
+    <!---list_2---->
+    <div class="proListBox">
+      <div class="proType pngImg"></div>
+      <ul class="indexPros">
+        <li class="product">
+          <a href="#" class="proImg"><img src="images/tmp_img_03.jpg"></a
+          ><a href="#" class="proName">xxx靴子</a
+          ><span class="proInfo">￥200</span>
+        </li>
+        <li class="product">
+          <a href="#" class="proImg"><img src="images/tmp_img_03.jpg"></a
+          ><a href="#" class="proName">xxx靴子</a
+          ><span class="proInfo">￥200</span>
+        </li>
+        <li class="product">
+          <a href="#" class="proImg"><img src="images/tmp_img_03.jpg"></a
+          ><a href="#" class="proName">xxx靴子</a
+          ><span class="proInfo">￥200</span>
+        </li>
+        <li class="product">
+          <a href="#" class="proImg"><img src="images/tmp_img_03.jpg"></a
+          ><a href="#" class="proName">xxx靴子</a
+          ><span class="proInfo">￥200</span>
+        </li>
+        <li class="product">
+          <a href="#" class="proImg"><img src="images/tmp_img_03.jpg"></a
+          ><a href="#" class="proName">xxx靴子</a
+          ><span class="proInfo">￥200</span>
+        </li>
+      </ul>
+    </div>
+    <!---list_3---->
+    <div class="proListBox">
+      <div class="proType pngImg"></div>
+      <ul class="indexPros">
+        <li class="product">
+          <a href="#" class="proImg"><img src="images/tmp_img_03.jpg"></a
+          ><a href="#" class="proName">xxx靴子</a
+          ><span class="proInfo">￥200</span>
+        </li>
+        <li class="product">
+          <a href="#" class="proImg"><img src="images/tmp_img_03.jpg"></a
+          ><a href="#" class="proName">xxx靴子</a
+          ><span class="proInfo">￥200</span>
+        </li>
+        <li class="product">
+          <a href="#" class="proImg"><img src="images/tmp_img_03.jpg"></a
+          ><a href="#" class="proName">xxx靴子</a
+          ><span class="proInfo">￥200</span>
+        </li>
+        <li class="product">
+          <a href="#" class="proImg"><img src="images/tmp_img_03.jpg"></a
+          ><a href="#" class="proName">xxx靴子</a
+          ><span class="proInfo">￥200</span>
+        </li>
+        <li class="product">
+          <a href="#" class="proImg"><img src="images/tmp_img_03.jpg"></a
+          ><a href="#" class="proName">xxx靴子</a
+          ><span class="proInfo">￥200</span>
+        </li>
+      </ul>
+    </div>
+    <!---list_4---->
+    <div class="proListBox">
+      <div class="proType pngImg"></div>
+      <ul class="indexPros">
+        <li class="product">
+          <a href="#" class="proImg"><img src="images/tmp_img_03.jpg"></a
+          ><a href="#" class="proName">xxx靴子</a
+          ><span class="proInfo">￥200</span>
+        </li>
+        <li class="product">
+          <a href="#" class="proImg"><img src="images/tmp_img_03.jpg"></a
+          ><a href="#" class="proName">xxx靴子</a
+          ><span class="proInfo">￥200</span>
+        </li>
+        <li class="product">
+          <a href="#" class="proImg"><img src="images/tmp_img_03.jpg"></a
+          ><a href="#" class="proName">xxx靴子</a
+          ><span class="proInfo">￥200</span>
+        </li>
+        <li class="product">
+          <a href="#" class="proImg"><img src="images/tmp_img_03.jpg"></a
+          ><a href="#" class="proName">xxx靴子</a
+          ><span class="proInfo">￥200</span>
+        </li>
+        <li class="product">
+          <a href="#" class="proImg"><img src="images/tmp_img_03.jpg"></a
+          ><a href="#" class="proName">xxx靴子</a
+          ><span class="proInfo">￥200</span>
+        </li>
+      </ul>
+    </div>
+    <div id="containerEnd"><div class="conEndImg"></div></div>
+  </div>
+  <div id="footer">
+    <p>工作时间:上午:8:00~11:30 下午:14:00~18:00 联系电话:18706428773 谢龙 QQ在线</p>
+    <p>Copyright© 2013 版权所有  NDYIH.COM 岚岛壹号 ICP备案号:闽ICP备123456</p>
+  </div>
+</body>
+</html>
