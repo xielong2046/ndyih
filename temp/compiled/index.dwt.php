@@ -21,6 +21,8 @@
 <div id="outWrap">
   <?php echo $this->fetch('library/page_header.lbi'); ?>
   <div id="mainGallery" class="pngImg">
+    <?php if (count ( $this->_var['hot_goods'] ) > 0): ?>
+    <?php echo $this->c_hot_goods(array('par'=>$this->_var['hot_goods'])); ?>
     <ul class="mGallery_f">
        <li class="proImg"><a href="#" target="blank" alt="" title=""
         ><img src="themes/default/images/tmp_1.png" class="pngImg"></a></li>
@@ -39,6 +41,7 @@
        <li class="proInfo"><a href="#" class="proName">XXXXX鞋</a><span 
         class="proPrice">￥128</span></li>
     </ul>
+    <?php endif; ?>
   </div>
   <div id="indexContainer">
     

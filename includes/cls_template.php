@@ -525,7 +525,11 @@ class cls_template
 
                     return '<?php echo $this->html_select_time(' . $this->make_array($t) . '); ?>';
                     break;
+                case 'c_hot_goods':
+                    $t = $this->get_para(substr($tag, 12), 0);
 
+                    return '<?php echo $this->c_hot_goods(' . $this->make_array($t) . '); ?>';  
+                    break;      
                 default:
                     return '{' . $tag . '}';
                     break;
@@ -1429,6 +1433,17 @@ class cls_template
         }
 
         return $str;
+    }
+
+    function c_hot_goods($arr)
+    {
+      $r = '';
+      if( count($arr)>0 )
+      {
+        for($i=0;$i<=2;$i++){
+        }
+      }
+      return $r;
     }
 }
 
