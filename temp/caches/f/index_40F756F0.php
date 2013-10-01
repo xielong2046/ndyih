@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:2:{i:0;s:52:"D:/project/local.ecshop.com/themes/default/index.dwt";i:1;s:66:"D:/project/local.ecshop.com/themes/default/library/page_header.lbi";}s:7:"expires";i:1380534704;s:8:"maketime";i:1380531104;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:2:{i:0;s:52:"D:/project/local.ecshop.com/themes/default/index.dwt";i:1;s:66:"D:/project/local.ecshop.com/themes/default/library/page_header.lbi";}s:7:"expires";i:1380595254;s:8:"maketime";i:1380591654;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="ECSHOP v2.7.3" />
@@ -40,7 +40,7 @@
         <a href="group_buy.php">团购商品</a>/
         <a href="message.php">留言板</a>/
       </div>  <div id="mainGallery" class="pngImg">
-        3    <ul class="mGallery_f">
+            <ul class="mGallery_f">
        <li class="proImg"><a href="#" target="blank" alt="" title=""
         ><img src="themes/default/images/tmp_1.png" class="pngImg"></a></li>
        <li class="proInfo"><a href="#" class="proName">XXXXX鞋</a><span 
