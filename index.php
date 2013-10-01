@@ -114,9 +114,10 @@ if (!$smarty->is_cached('index.dwt', $cache_id))
     $smarty->assign('helps',           get_shop_help());       // 网店帮助
     $smarty->assign('top_goods',       get_top10());           // 销售排行
 
+
     $smarty->assign('best_goods',      get_recommend_goods('best'));    // 推荐商品
     $smarty->assign('new_goods',       get_recommend_goods('new'));     // 最新商品
-    $smarty->assign('hot_goods',       get_recommend_goods('hot'));     // 热点文章
+    $smarty->assign('hot_goods',       get_recommend_goods('hot'));     // 热卖商品
     $smarty->assign('promotion_goods', get_promote_goods()); // 特价商品
     $smarty->assign('brand_list',      get_brands());
     $smarty->assign('promotion_info',  get_promotion_info()); // 增加一个动态显示所有促销信息的标签栏
@@ -126,6 +127,13 @@ if (!$smarty->is_cached('index.dwt', $cache_id))
     $smarty->assign('group_buy_goods', index_get_group_buy());      // 团购商品
     $smarty->assign('auction_list',    index_get_auction());        // 拍卖活动
     $smarty->assign('shop_notice',     $_CFG['shop_notice']);       // 商店公告
+
+    //ndyih_add
+    $smarty->assign('goodtype_1',      get_goods_form_catId('3','goods_id DESC','0,5'));
+    $smarty->assign('goodtype_2',      get_goods_form_catId('4','goods_id DESC','0,5'));
+    $smarty->assign('goodtype_3',      get_goods_form_catId('5','goods_id DESC','0,5'));
+    $smarty->assign('goodtype_4',      get_goods_form_catId('11','goods_id DESC','0,5'));
+    //ndyih_end
 
     /* 首页主广告设置 */
     $smarty->assign('index_ad',     $_CFG['index_ad']);

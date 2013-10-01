@@ -4,17 +4,17 @@ $data = array (
   array (
     0 => 
     array (
-      'goods_id' => '9',
+      'goods_id' => '8',
       'sort_order' => '100',
     ),
     1 => 
     array (
-      'goods_id' => '1',
+      'goods_id' => '9',
       'sort_order' => '100',
     ),
     2 => 
     array (
-      'goods_id' => '8',
+      'goods_id' => '1',
       'sort_order' => '100',
     ),
     3 => 
@@ -77,47 +77,47 @@ $data = array (
   array (
     0 => 
     array (
-      'goods_id' => '9',
+      'goods_id' => '32',
       'sort_order' => '100',
     ),
     1 => 
     array (
-      'goods_id' => '1',
+      'goods_id' => '8',
       'sort_order' => '100',
     ),
     2 => 
     array (
-      'goods_id' => '8',
+      'goods_id' => '9',
       'sort_order' => '100',
     ),
     3 => 
     array (
-      'goods_id' => '19',
+      'goods_id' => '1',
       'sort_order' => '100',
     ),
     4 => 
     array (
-      'goods_id' => '20',
+      'goods_id' => '19',
       'sort_order' => '100',
     ),
     5 => 
     array (
-      'goods_id' => '22',
+      'goods_id' => '20',
       'sort_order' => '100',
     ),
     6 => 
     array (
-      'goods_id' => '23',
+      'goods_id' => '22',
       'sort_order' => '100',
     ),
     7 => 
     array (
-      'goods_id' => '24',
+      'goods_id' => '23',
       'sort_order' => '100',
     ),
     8 => 
     array (
-      'goods_id' => '32',
+      'goods_id' => '24',
       'sort_order' => '100',
     ),
     9 => 
@@ -140,52 +140,52 @@ $data = array (
   array (
     0 => 
     array (
-      'goods_id' => '9',
+      'goods_id' => '32',
       'sort_order' => '100',
     ),
     1 => 
     array (
-      'goods_id' => '1',
+      'goods_id' => '8',
       'sort_order' => '100',
     ),
     2 => 
     array (
-      'goods_id' => '8',
+      'goods_id' => '9',
       'sort_order' => '100',
     ),
     3 => 
     array (
-      'goods_id' => '13',
+      'goods_id' => '1',
       'sort_order' => '100',
     ),
     4 => 
     array (
-      'goods_id' => '14',
+      'goods_id' => '13',
       'sort_order' => '100',
     ),
     5 => 
     array (
-      'goods_id' => '17',
+      'goods_id' => '14',
       'sort_order' => '100',
     ),
     6 => 
     array (
-      'goods_id' => '19',
+      'goods_id' => '17',
       'sort_order' => '100',
     ),
     7 => 
     array (
-      'goods_id' => '20',
+      'goods_id' => '19',
       'sort_order' => '100',
     ),
     8 => 
     array (
-      'goods_id' => '24',
+      'goods_id' => '20',
       'sort_order' => '100',
     ),
     9 => 
     array (
-      'goods_id' => '32',
+      'goods_id' => '24',
       'sort_order' => '100',
     ),
     10 => 
@@ -226,9 +226,10 @@ $data = array (
   ),
   'brand' => 
   array (
+    32 => '诺基亚',
+    8 => '飞利浦',
     9 => '诺基亚',
     1 => 'LG',
-    8 => '飞利浦',
     13 => '诺基亚',
     14 => '诺基亚',
     17 => '夏新',
@@ -237,7 +238,6 @@ $data = array (
     22 => '多普达',
     23 => '诺基亚',
     24 => '联想',
-    32 => '诺基亚',
     12 => '摩托罗拉',
     10 => '索爱',
     5 => '索爱',

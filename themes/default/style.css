@@ -103,6 +103,7 @@ body{
   position: absolute;
   left: 41px;
   top: 51px;
+  text-align: center;
 }
 #mainGallery ul.mGallery_f li.proInfo{
   width: 216px;
@@ -129,6 +130,7 @@ body{
   position: absolute;
   left: 35px;
   top: 75px;
+  text-align: center;
 }
 #mainGallery ul.mGallery_s li.proInfo{
   width: 216px;
@@ -155,6 +157,7 @@ body{
   position: absolute;
   left: 35px;
   top: 65px;
+  text-align: center;
 }
 #mainGallery ul.mGallery_t li.proInfo{
   width: 216px;

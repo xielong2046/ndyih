@@ -1435,16 +1435,32 @@ class cls_template
         return $str;
     }
 
-    function c_hot_goods($arr)
+    function c_hot_goods($par)
     {
       $r = '';
-      if( count($arr)>0 )
+      if(count($par['goods'])>0)
       {
-        for($i=0;$i<=2;$i++){
-        }
+        $countNum = count($par['goods']);
+        $r .= '<ul class="mGallery_f">
+                <li class="proImg"><a href="'.$par['goods'][$countNum-1]['url'].'" target="blank" alt="'.$par['goods'][$countNum-1]['name'].'" title="'.$par['goods'][$countNum-1]['name'].'"
+                ><img src="'.$par['goods'][$countNum-1]['thumb'].'" class="pngImg" alt="'.$par['goods'][$countNum-1]['name'].'" title="'.$par['goods'][$countNum-1]['name'].'"></a></li>
+                <li class="proInfo"><a href="'.$par['goods'][$countNum-1]['url'].'" class="proName" title="'.$par['goods'][$countNum-1]['name'].'" alt="'.$par['goods'][$countNum-1]['name'].'">'.$par['goods'][$countNum-1]['name'].'</a><span 
+                class="proPrice">'.$par['goods'][$countNum-1]['shop_price'].'</span></li>
+               </ul>'."\r\n";
+        $r .= '<ul class="mGallery_s">
+                <li class="proImg"><a href="'.$par['goods'][$countNum-2]['url'].'" target="blank" alt="'.$par['goods'][$countNum-2]['name'].'" title="'.$par['goods'][$countNum-2]['name'].'"
+                ><img src="'.$par['goods'][$countNum-2]['thumb'].'" class="pngImg" alt="'.$par['goods'][$countNum-2]['name'].'" title="'.$par['goods'][$countNum-2]['name'].'"></a></li>
+                <li class="proInfo"><a href="'.$par['goods'][$countNum-2]['url'].'" class="proName" alt="'.$par['goods'][$countNum-2]['name'].'" title="'.$par['goods'][$countNum-2]['name'].'">'.$par['goods'][$countNum-2]['name'].'</a><span 
+                class="proPrice">'.$par['goods'][$countNum-2]['shop_price'].'</span></li>
+               </ul>'."\r\n";
+        $r .= '<ul class="mGallery_t">
+                <li class="proImg"><a href="'.$par['goods'][$countNum-3]['url'].'" target="blank" alt="'.$par['goods'][$countNum-3]['name'].'" title="'.$par['goods'][$countNum-3]['name'].'"
+                ><img src="'.$par['goods'][$countNum-3]['thumb'].'" class="pngImg" alt="'.$par['goods'][$countNum-3]['name'].'" title="'.$par['goods'][$countNum-3]['name'].'"></a></li>
+                <li class="proInfo"><a href="'.$par['goods'][$countNum-3]['url'].'" class="proName">'.$par['goods'][$countNum-3]['name'].'</a><span 
+                class="proPrice">'.$par['goods'][$countNum-3]['shop_price'].'</span></li>
+               </ul>'."\r\n";
       }
       return $r;
     }
 }
-
 ?>

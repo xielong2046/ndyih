@@ -21,26 +21,9 @@
 <div id="outWrap">
   <?php echo $this->fetch('library/page_header.lbi'); ?>
   <div id="mainGallery" class="pngImg">
-    <?php if (count ( $this->_var['hot_goods'] ) > 0): ?>
-    <?php echo $this->c_hot_goods(array('par'=>$this->_var['hot_goods'])); ?>
-    <ul class="mGallery_f">
-       <li class="proImg"><a href="#" target="blank" alt="" title=""
-        ><img src="themes/default/images/tmp_1.png" class="pngImg"></a></li>
-       <li class="proInfo"><a href="#" class="proName">XXXXX鞋</a><span 
-        class="proPrice">￥128</span></li>
-    </ul>
-    <ul class="mGallery_s">
-       <li class="proImg"><a href="#" target="blank" alt="" title=""
-        ><img src="themes/default/images/tmp_1.png" class="pngImg"></a></li>
-       <li class="proInfo"><a href="#" class="proName">XXXXX鞋</a><span 
-        class="proPrice">￥128</span></li>
-    </ul>
-    <ul class="mGallery_t">
-       <li class="proImg"><a href="#" target="blank" alt="" title=""
-        ><img src="themes/default/images/tmp_1.png" class="pngImg"></a></li>
-       <li class="proInfo"><a href="#" class="proName">XXXXX鞋</a><span 
-        class="proPrice">￥128</span></li>
-    </ul>
+    
+    <?php if (count ( $this->_var['best_goods'] ) > 0): ?>
+    <?php echo $this->c_hot_goods(array('goods'=>$this->_var['best_goods'])); ?>
     <?php endif; ?>
   </div>
   <div id="indexContainer">
@@ -48,131 +31,65 @@
     <div class="proListBox">
       <div class="proType pngImg"></div>
       <ul class="indexPros">
+        <?php $_from = $this->_var['goodtype_1']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods');if (count($_from)):
+    foreach ($_from AS $this->_var['goods']):
+?>
         <li class="product">
-          <a href="#" class="proImg"><img src="themes/default/images/tmp_img_03.jpg"></a
-          ><a href="#" class="proName">xxx靴子</a
-          ><span class="proInfo">￥200</span>
+          <a href="<?php echo $this->_var['goods']['url']; ?>" class="proImg" target="_blank"><img src="<?php echo $this->_var['goods']['goods_thumb']; ?>" alt="<?php echo htmlspecialchars($this->_var['goods']['goods_name']); ?>"></a
+          ><a href="<?php echo $this->_var['goods']['url']; ?>" class="proName" target="_blank"><?php echo htmlspecialchars($this->_var['goods']['goods_name']); ?></a
+          ><span class="proInfo">￥<?php echo $this->_var['goods']['shop_price']; ?></span>
         </li>
-        <li class="product">
-          <a href="#" class="proImg"><img src="themes/default/images/tmp_img_03.jpg"></a
-          ><a href="#" class="proName">xxx靴子</a
-          ><span class="proInfo">￥200</span>
-        </li>
-        <li class="product">
-          <a href="#" class="proImg"><img src="themes/default/images/tmp_img_03.jpg"></a
-          ><a href="#" class="proName">xxx靴子</a
-          ><span class="proInfo">￥200</span>
-        </li>
-        <li class="product">
-          <a href="#" class="proImg"><img src="themes/default/images/tmp_img_03.jpg"></a
-          ><a href="#" class="proName">xxx靴子</a
-          ><span class="proInfo">￥200</span>
-        </li>
-        <li class="product">
-          <a href="#" class="proImg"><img src="themes/default/images/tmp_img_03.jpg"></a
-          ><a href="#" class="proName">xxx靴子</a
-          ><span class="proInfo">￥200</span>
-        </li>
+        <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
       </ul>
     </div>
     
     <div class="proListBox">
       <div class="proType pngImg"></div>
       <ul class="indexPros">
+        <?php $_from = $this->_var['goodtype_2']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods');if (count($_from)):
+    foreach ($_from AS $this->_var['goods']):
+?>
         <li class="product">
-          <a href="#" class="proImg"><img src="themes/default/images/tmp_img_03.jpg"></a
-          ><a href="#" class="proName">xxx靴子</a
-          ><span class="proInfo">￥200</span>
+          <a href="<?php echo $this->_var['goods']['url']; ?>" class="proImg" target="_blank"><img src="<?php echo $this->_var['goods']['goods_thumb']; ?>" alt="<?php echo htmlspecialchars($this->_var['goods']['goods_name']); ?>"></a
+          ><a href="<?php echo $this->_var['goods']['url']; ?>" class="proName" target="_blank"><?php echo htmlspecialchars($this->_var['goods']['goods_name']); ?></a
+          ><span class="proInfo">￥<?php echo $this->_var['goods']['shop_price']; ?></span>
         </li>
-        <li class="product">
-          <a href="#" class="proImg"><img src="themes/default/images/tmp_img_03.jpg"></a
-          ><a href="#" class="proName">xxx靴子</a
-          ><span class="proInfo">￥200</span>
-        </li>
-        <li class="product">
-          <a href="#" class="proImg"><img src="themes/default/images/tmp_img_03.jpg"></a
-          ><a href="#" class="proName">xxx靴子</a
-          ><span class="proInfo">￥200</span>
-        </li>
-        <li class="product">
-          <a href="#" class="proImg"><img src="themes/default/images/tmp_img_03.jpg"></a
-          ><a href="#" class="proName">xxx靴子</a
-          ><span class="proInfo">￥200</span>
-        </li>
-        <li class="product">
-          <a href="#" class="proImg"><img src="themes/default/images/tmp_img_03.jpg"></a
-          ><a href="#" class="proName">xxx靴子</a
-          ><span class="proInfo">￥200</span>
-        </li>
+        <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
+      </ul>
       </ul>
     </div>
     
     <div class="proListBox">
       <div class="proType pngImg"></div>
       <ul class="indexPros">
+        <?php $_from = $this->_var['goodtype_3']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods');if (count($_from)):
+    foreach ($_from AS $this->_var['goods']):
+?>
         <li class="product">
-          <a href="#" class="proImg"><img src="themes/default/images/tmp_img_03.jpg"></a
-          ><a href="#" class="proName">xxx靴子</a
-          ><span class="proInfo">￥200</span>
+          <a href="<?php echo $this->_var['goods']['url']; ?>" class="proImg" target="_blank"><img src="<?php echo $this->_var['goods']['goods_thumb']; ?>" alt="<?php echo htmlspecialchars($this->_var['goods']['goods_name']); ?>"></a
+          ><a href="<?php echo $this->_var['goods']['url']; ?>" class="proName" target="_blank"><?php echo htmlspecialchars($this->_var['goods']['goods_name']); ?></a
+          ><span class="proInfo">￥<?php echo $this->_var['goods']['shop_price']; ?></span>
         </li>
-        <li class="product">
-          <a href="#" class="proImg"><img src="themes/default/images/tmp_img_03.jpg"></a
-          ><a href="#" class="proName">xxx靴子</a
-          ><span class="proInfo">￥200</span>
-        </li>
-        <li class="product">
-          <a href="#" class="proImg"><img src="themes/default/images/tmp_img_03.jpg"></a
-          ><a href="#" class="proName">xxx靴子</a
-          ><span class="proInfo">￥200</span>
-        </li>
-        <li class="product">
-          <a href="#" class="proImg"><img src="themes/default/images/tmp_img_03.jpg"></a
-          ><a href="#" class="proName">xxx靴子</a
-          ><span class="proInfo">￥200</span>
-        </li>
-        <li class="product">
-          <a href="#" class="proImg"><img src="themes/default/images/tmp_img_03.jpg"></a
-          ><a href="#" class="proName">xxx靴子</a
-          ><span class="proInfo">￥200</span>
-        </li>
+        <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
       </ul>
     </div>
     
     <div class="proListBox">
       <div class="proType pngImg"></div>
       <ul class="indexPros">
+        <?php $_from = $this->_var['goodtype_4']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods');if (count($_from)):
+    foreach ($_from AS $this->_var['goods']):
+?>
         <li class="product">
-          <a href="#" class="proImg"><img src="themes/default/images/tmp_img_03.jpg"></a
-          ><a href="#" class="proName">xxx靴子</a
-          ><span class="proInfo">￥200</span>
+          <a href="<?php echo $this->_var['goods']['url']; ?>" class="proImg" target="_blank"><img src="<?php echo $this->_var['goods']['goods_thumb']; ?>" alt="<?php echo htmlspecialchars($this->_var['goods']['goods_name']); ?>"></a
+          ><a href="<?php echo $this->_var['goods']['url']; ?>" class="proName" target="_blank"><?php echo htmlspecialchars($this->_var['goods']['goods_name']); ?></a
+          ><span class="proInfo">￥<?php echo $this->_var['goods']['shop_price']; ?></span>
         </li>
-        <li class="product">
-          <a href="#" class="proImg"><img src="themes/default/images/tmp_img_03.jpg"></a
-          ><a href="#" class="proName">xxx靴子</a
-          ><span class="proInfo">￥200</span>
-        </li>
-        <li class="product">
-          <a href="#" class="proImg"><img src="themes/default/images/tmp_img_03.jpg"></a
-          ><a href="#" class="proName">xxx靴子</a
-          ><span class="proInfo">￥200</span>
-        </li>
-        <li class="product">
-          <a href="#" class="proImg"><img src="themes/default/images/tmp_img_03.jpg"></a
-          ><a href="#" class="proName">xxx靴子</a
-          ><span class="proInfo">￥200</span>
-        </li>
-        <li class="product">
-          <a href="#" class="proImg"><img src="themes/default/images/tmp_img_03.jpg"></a
-          ><a href="#" class="proName">xxx靴子</a
-          ><span class="proInfo">￥200</span>
-        </li>
+        <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
       </ul>
     </div>
     <div id="containerEnd"><div class="conEndImg"></div></div>
   </div>
-  <div id="footer">
-    <p>工作时间:上午:8:00~11:30 下午:14:00~18:00 联系电话:18706428773 谢龙 QQ在线</p>
-    <p>Copyright© 2013 版权所有  NDYIH.COM 岚岛壹号 ICP备案号:闽ICP备123456</p>
-  </div>
+  <?php echo $this->fetch('library/page_footer.lbi'); ?>
 </body>
 </html>
