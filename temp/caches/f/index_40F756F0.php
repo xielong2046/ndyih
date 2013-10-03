@@ -1,15 +1,15 @@
-<?php exit;?>a:3:{s:8:"template";a:3:{i:0;s:52:"D:/project/local.ecshop.com/themes/default/index.dwt";i:1;s:66:"D:/project/local.ecshop.com/themes/default/library/page_header.lbi";i:2;s:66:"D:/project/local.ecshop.com/themes/default/library/page_footer.lbi";}s:7:"expires";i:1380622101;s:8:"maketime";i:1380618501;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:3:{i:0;s:48:"D:/www/local.ecshop.com/themes/default/index.dwt";i:1;s:62:"D:/www/local.ecshop.com/themes/default/library/page_header.lbi";i:2;s:62:"D:/www/local.ecshop.com/themes/default/library/page_footer.lbi";}s:7:"expires";i:1380812433;s:8:"maketime";i:1380808833;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="ECSHOP v2.7.3" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="Keywords" content="ECSHOP演示站" />
-<meta name="Description" content="ECSHOP演示站" />
-<title>ECSHOP演示站 - Powered by ECShop</title>
+<meta name="Keywords" content="岚岛壹号" />
+<meta name="Description" content="岚岛壹号" />
+<title>岚岛壹号 - Powered by ECShop</title>
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="icon" href="animated_favicon.gif" type="image/gif" />
 <link href="themes/default/style.css" rel="stylesheet" type="text/css" />
-<link rel="alternate" type="application/rss+xml" title="RSS|ECSHOP演示站 - Powered by ECShop" href="feed.php" />
+<link rel="alternate" type="application/rss+xml" title="RSS|岚岛壹号 - Powered by ECShop" href="feed.php" />
 <script type="text/javascript" src="js/common.js"></script><script type="text/javascript" src="js/jquery.js"></script><script type="text/javascript" src="js/png.js"></script><script type="text/javascript" src="js/ndyih_common.js"></script></head>
 <body>
 <div id="outWrap">
@@ -38,7 +38,7 @@
         <a href="category.php?id=5">双模手机</a>/
         <a href="category.php?id=6">手机配件</a>/
         <a href="group_buy.php">团购商品</a>/
-        <a href="message.php">留言板</a>/
+        <a href="activity.php">优惠活动</a>/
       </div>  <div id="mainGallery" class="pngImg">
     
         <ul class="mGallery_f">
@@ -63,9 +63,9 @@
   <div id="indexContainer">
     
     <div class="proListBox">
-      <div class="proType pngImg"></div>
+      <div class="proType pngImg"><div class="proTypeName">GSM手机</div></div>
       <ul class="indexPros">
-                <li class="product">
+                        <li class="product">
           <a href="goods.php?id=32" class="proImg" target="_blank"><img src="images/200905/thumb_img/32_thumb_G_1242110760196.jpg" alt="诺基亚N85"></a
           ><a href="goods.php?id=32" class="proName" target="_blank">诺基亚N85</a
           ><span class="proInfo">￥3010.00</span>
@@ -90,14 +90,14 @@
           ><a href="goods.php?id=20" class="proName" target="_blank">三星BC01</a
           ><span class="proInfo">￥280.00</span>
         </li>
-              </ul>
+                      </ul>
     </div>
     
     <div class="proListBox">
-      <div class="proType pngImg"></div>
+      <div class="proType pngImg"><div class="proTypeName">3G手机</div></div>
       <ul class="indexPros">
-                <li class="product">
-          <a href="goods.php?id=18" class="proImg" target="_blank"><img src="images/200905/thumb_img/17_thumb_G_1241969394587.jpg" alt="夏新T5"></a
+                        <li class="product">
+          <a href="goods.php?id=18" class="proImg" target="_blank"><img src="" alt="夏新T5"></a
           ><a href="goods.php?id=18" class="proName" target="_blank">夏新T5</a
           ><span class="proInfo">￥2878.00</span>
         </li>
@@ -111,26 +111,26 @@
           ><a href="goods.php?id=1" class="proName" target="_blank">KD876</a
           ><span class="proInfo">￥1388.00</span>
         </li>
-              </ul>
+                      </ul>
       </ul>
     </div>
     
     <div class="proListBox">
-      <div class="proType pngImg"></div>
+      <div class="proType pngImg"><div class="proTypeName">双模手机</div></div>
       <ul class="indexPros">
-                <li class="product">
+                        <li class="product">
           <a href="goods.php?id=23" class="proImg" target="_blank"><img src="images/200905/thumb_img/23_thumb_G_1241971556399.jpg" alt="诺基亚N96"></a
           ><a href="goods.php?id=23" class="proName" target="_blank">诺基亚N96</a
           ><span class="proInfo">￥3700.00</span>
         </li>
-              </ul>
+                      </ul>
     </div>
     
     <div class="proListBox">
-      <div class="proType pngImg"></div>
+      <div class="proType pngImg"><div class="proTypeName">读卡器和内存卡</div></div>
       <ul class="indexPros">
-                <li class="product">
-          <a href="goods.php?id=6" class="proImg" target="_blank"><img src="images/200905/thumb_img/5_thumb_G_1241422518886.jpg" alt="胜创KINGMAX内存卡"></a
+                        <li class="product">
+          <a href="goods.php?id=6" class="proImg" target="_blank"><img src="" alt="胜创KINGMAX内存卡"></a
           ><a href="goods.php?id=6" class="proName" target="_blank">胜创KINGMAX内存卡</a
           ><span class="proInfo">￥42.00</span>
         </li>
@@ -139,12 +139,12 @@
           ><a href="goods.php?id=5" class="proName" target="_blank">索爱原装M2卡读卡器</a
           ><span class="proInfo">￥20.00</span>
         </li>
-              </ul>
+                      </ul>
     </div>
     <div id="containerEnd"><div class="conEndImg"></div></div>
   </div>
   <div id="footer">
-    <p>工作时间:上午:8:00~11:30 下午:14:00~18:00 联系电话:18706428773 谢龙 QQ在线</p>
-    <p>Copyright© 2013 版权所有  NDYIH.COM 岚岛壹号 ICP备案号:闽ICP备123456</p>
+    <p>工作时间:上午:8:00~11:30 下午:14:00~18:00 联系电话:18760428773 谢先生  <a href="http://wpa.qq.com/msgrd?V=1&amp;Uin=357377031&amp;Site=岚岛壹号&amp;Menu=yes" target="_blank"><img src="http://wpa.qq.com/pa?p=1:357377031:4" height="16" border="0" alt="QQ" /> 357377031</a></p>
+    <p>Copyright© 2013 版权所有  NDYIH.COM 岚岛壹号 ICP备案证书号:<a href="http://www.miibeian.gov.cn/" target="_blank">闽ICP备123456</a></p>
   </div></body>
 </html>

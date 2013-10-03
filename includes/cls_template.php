@@ -525,11 +525,19 @@ class cls_template
 
                     return '<?php echo $this->html_select_time(' . $this->make_array($t) . '); ?>';
                     break;
+
                 case 'c_hot_goods':
                     $t = $this->get_para(substr($tag, 12), 0);
 
                     return '<?php echo $this->c_hot_goods(' . $this->make_array($t) . '); ?>';  
-                    break;      
+                    break;
+
+                case 'g_pro_type_name':
+                    $t = $this->get_para(substr($tag, 12), 0);
+
+                    return '<?php echo $this->g_pro_type_name(' . $this->make_array($t) . '); ?>';  
+                    break;
+
                 default:
                     return '{' . $tag . '}';
                     break;
@@ -1459,6 +1467,19 @@ class cls_template
                 <li class="proInfo"><a href="'.$par['goods'][$countNum-3]['url'].'" class="proName">'.$par['goods'][$countNum-3]['name'].'</a><span 
                 class="proPrice">'.$par['goods'][$countNum-3]['shop_price'].'</span></li>
                </ul>'."\r\n";
+      }
+      return $r;
+    }
+
+    function g_pro_type_name($par)
+    {
+      $r = '';
+      if( count($par)>0 )
+      {
+        $cat_id = $par['type_id'];
+        $sql = 'SELECT * FROM '.$GLOBALS['ecs']->table('category').' WHERE cat_id = '.$cat_id;
+        $res = $GLOBALS['db']->getRow($sql);
+        $r = count($res)>0 ? $res['cat_name'] : '';
       }
       return $r;
     }
