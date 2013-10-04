@@ -1,19 +1,15 @@
-<<<<<<< HEAD
-<?php exit;?>a:3:{s:8:"template";a:3:{i:0;s:52:"D:/project/local.ecshop.com/themes/default/index.dwt";i:1;s:66:"D:/project/local.ecshop.com/themes/default/library/page_header.lbi";i:2;s:66:"D:/project/local.ecshop.com/themes/default/library/page_footer.lbi";}s:7:"expires";i:1380646765;s:8:"maketime";i:1380643165;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-=======
-<?php exit;?>a:3:{s:8:"template";a:3:{i:0;s:48:"D:/www/local.ecshop.com/themes/default/index.dwt";i:1;s:62:"D:/www/local.ecshop.com/themes/default/library/page_header.lbi";i:2;s:62:"D:/www/local.ecshop.com/themes/default/library/page_footer.lbi";}s:7:"expires";i:1380812433;s:8:"maketime";i:1380808833;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
->>>>>>> 2a34f53ceaa652573df31f672d66f49d6aabb144
+<?php exit;?>a:3:{s:8:"template";a:3:{i:0;s:52:"D:/project/local.ecshop.com/themes/default/index.dwt";i:1;s:66:"D:/project/local.ecshop.com/themes/default/library/page_header.lbi";i:2;s:66:"D:/project/local.ecshop.com/themes/default/library/page_footer.lbi";}s:7:"expires";i:1380895977;s:8:"maketime";i:1380892377;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="ECSHOP v2.7.3" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="Keywords" content="岚岛壹号" />
-<meta name="Description" content="岚岛壹号" />
-<title>岚岛壹号 - Powered by ECShop</title>
+<meta name="Keywords" content="ECSHOP演示站" />
+<meta name="Description" content="ECSHOP演示站" />
+<title>ECSHOP演示站 - Powered by ECShop</title>
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="icon" href="animated_favicon.gif" type="image/gif" />
 <link href="themes/default/style.css" rel="stylesheet" type="text/css" />
-<link rel="alternate" type="application/rss+xml" title="RSS|岚岛壹号 - Powered by ECShop" href="feed.php" />
+<link rel="alternate" type="application/rss+xml" title="RSS|ECSHOP演示站 - Powered by ECShop" href="feed.php" />
 <script type="text/javascript" src="js/common.js"></script><script type="text/javascript" src="js/jquery.js"></script><script type="text/javascript" src="js/png.js"></script><script type="text/javascript" src="js/ndyih_common.js"></script></head>
 <body>
 <div id="outWrap">
@@ -42,7 +38,7 @@
         <a href="category.php?id=5">双模手机</a>/
         <a href="category.php?id=6">手机配件</a>/
         <a href="group_buy.php">团购商品</a>/
-        <a href="activity.php">优惠活动</a>/
+        <a href="message.php">留言板</a>/
       </div>  <div id="mainGallery" class="pngImg">
     
         <ul class="mGallery_f">
@@ -101,7 +97,7 @@
       <div class="proType pngImg"><div class="proTypeName">3G手机</div></div>
       <ul class="indexPros">
                         <li class="product">
-          <a href="goods.php?id=18" class="proImg" target="_blank"><img src="" alt="夏新T5"></a
+          <a href="goods.php?id=18" class="proImg" target="_blank"><img src="images/200905/thumb_img/17_thumb_G_1241969394587.jpg" alt="夏新T5"></a
           ><a href="goods.php?id=18" class="proName" target="_blank">夏新T5</a
           ><span class="proInfo">￥2878.00</span>
         </li>
@@ -134,7 +130,7 @@
       <div class="proType pngImg"><div class="proTypeName">读卡器和内存卡</div></div>
       <ul class="indexPros">
                         <li class="product">
-          <a href="goods.php?id=6" class="proImg" target="_blank"><img src="" alt="胜创KINGMAX内存卡"></a
+          <a href="goods.php?id=6" class="proImg" target="_blank"><img src="images/200905/thumb_img/5_thumb_G_1241422518886.jpg" alt="胜创KINGMAX内存卡"></a
           ><a href="goods.php?id=6" class="proName" target="_blank">胜创KINGMAX内存卡</a
           ><span class="proInfo">￥42.00</span>
         </li>
@@ -147,14 +143,13 @@
     </div>
     <div id="containerEnd"><div class="conEndImg"></div></div>
   </div>
-<<<<<<< HEAD
     <div id="footer">
-    <p>工作时间:上午:8:00~11:30 下午:14:00~18:00 联系电话:18706428773 谢龙 QQ在线</p>
-    <p>Copyright© 2013 版权所有  NDYIH.COM 岚岛壹号 ICP备案号:闽ICP备123456</p>
-=======
-  <div id="footer">
-    <p>工作时间:上午:8:00~11:30 下午:14:00~18:00 联系电话:18760428773 谢先生  <a href="http://wpa.qq.com/msgrd?V=1&amp;Uin=357377031&amp;Site=岚岛壹号&amp;Menu=yes" target="_blank"><img src="http://wpa.qq.com/pa?p=1:357377031:4" height="16" border="0" alt="QQ" /> 357377031</a></p>
-    <p>Copyright© 2013 版权所有  NDYIH.COM 岚岛壹号 ICP备案证书号:<a href="http://www.miibeian.gov.cn/" target="_blank">闽ICP备123456</a></p>
->>>>>>> 2a34f53ceaa652573df31f672d66f49d6aabb144
-  </div></body>
+    <p>工作时间:上午:8:00~11:30 下午:14:00~18:00 联系电话:18760428773 谢先生  <a href="http://wpa.qq.com/msgrd?V=1&amp;Uin=357377031&amp;Site=ECSHOP&amp;Menu=yes" target="_blank"><img src="http://wpa.qq.com/pa?p=1:357377031:4" height="16" border="0" alt="QQ" /> 357377031</a></p>
+    <p>Copyright© 2013 版权所有  NDYIH.COM 岚岛壹号 ICP备案证书号:<a href="http://www.miibeian.gov.cn/" target="_blank">闽ICP备12345</a></p>
+  </div>
+<!--[if (IE 6)|(IE 7)]>
+<script type="text/javascript">
+    DD_belatedPNG.fix('.pngImg');
+</script>
+<![endif]--></body>
 </html>

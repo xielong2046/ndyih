@@ -2,7 +2,7 @@
 /*global*/
 .textStyle_f{border: #ccc 1px solid;height: 18px;}
 body{
-  font: 12px/1.5 'ËÎÌå','Microsoft Yahei','Simsun',Tahoma,Helvetica,arial,sans-serif;
+  font: 12px/1.5 '微软雅黑','Microsoft Yahei','宋体','Simsun',Tahoma,Helvetica,arial,sans-serif;
   color: #696868;
   /*background-color: #554b3a*/
   background: url(./images/m_1306214511116.jpg);
@@ -303,6 +303,11 @@ body{
   position: absolute;
   left: 351px;
   top: 140px;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 2px;
+  color: #504F4F;
+  font-family: '黑体';
 }
 #proListContainer .pListRecommand .recProArea{
   width: 341px;
@@ -347,7 +352,7 @@ body{
 #proListContainer .listOutWrap ul.products{
   margin:  27px 0px 0px 0px;
   position: relative;
-  left: 17px;
+  left: 10px;
 }
 #proListContainer .listOutWrap ul.products li.product{
   float: left;
@@ -409,12 +414,12 @@ body{
 }
 #proContainer .proInfoArea .proInfo .proPram{
   width: 386px;
-  height: 170px;
+  height: 180px;
   margin: 0 auto;
   border-bottom: #343232 1px dashed;
 }
 #proContainer .proInfoArea .proInfo .proPram ul{
-  margin: 20px 0px 0px 50px;
+  margin: 15px 0px 0px 50px;
 }
 #proContainer .proInfoArea .proInfo .proPram ul li{
   height: 20px;
@@ -431,7 +436,7 @@ body{
   height: 59px;
   width: 420px;
   position: absolute;
-  bottom: 0px;
+  bottom: -1px;
   right: 0px;
 }
 #proContainer .proInfoArea .shopOper .buy{

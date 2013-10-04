@@ -538,6 +538,12 @@ class cls_template
                     return '<?php echo $this->g_pro_type_name(' . $this->make_array($t) . '); ?>';  
                     break;
 
+                case 'g_last_good':
+                    $t = $this->get_para(substr($tag, 12), 0);
+
+                    return '<?php echo $this->g_last_good(' . $this->make_array($t) . '); ?>';  
+                    break;
+
                 default:
                     return '{' . $tag . '}';
                     break;
@@ -1480,6 +1486,21 @@ class cls_template
         $sql = 'SELECT * FROM '.$GLOBALS['ecs']->table('category').' WHERE cat_id = '.$cat_id;
         $res = $GLOBALS['db']->getRow($sql);
         $r = count($res)>0 ? $res['cat_name'] : '';
+      }
+      return $r;
+    }
+
+    function g_last_good($par)
+    {
+      $r = '';
+      if( count($par)>0 )
+      {
+        $num = count($par['goods'])-1;
+        $good = $par['goods'][$num];
+        $r = '<div class="recProArea pngImg">
+                  <a href="'.$good['url'].'" class="recProImg txtAlgCenter" alt="'.$good['short_name'].'" title="'.$good['short_name'].'"><img src="'.$good['thumb'].'" alt="'.$good['short_name'].'" title="'.$good['short_name'].'"></a>
+                  <div class="proInfo"><a href="'.$good['url'].'" target="_blank" alt="'.$good['short_name'].'" title="'.$good['short_name'].'">'.$good['short_name'].'</a> <span>'.$good['shop_price'].'</span></div>
+              </div>';
       }
       return $r;
     }
