@@ -28,8 +28,9 @@
   <div id="indexContainer">
     <!---list_1---->
     <div class="proListBox">
-      <div class="proType pngImg"></div>
+      <div class="proType pngImg"><!-- {if count($goodtype_1)>0} --><div class="proTypeName">{g_pro_type_name type_id=$goodtype_1[0].cat_id}</div><!-- {/if} --></div>
       <ul class="indexPros">
+        <!-- {if count($goodtype_1)>0} -->
         <!--{foreach from=$goodtype_1 item=goods}-->
         <li class="product">
           <a href="{$goods.url}" class="proImg" target="_blank"><img src="{$goods.goods_thumb}" alt="{$goods.goods_name|escape:html}"></a
@@ -37,12 +38,14 @@
           ><span class="proInfo">￥{$goods.shop_price}</span>
         </li>
         <!--{/foreach}-->
+        <!-- {/if} -->
       </ul>
     </div>
     <!---list_2---->
     <div class="proListBox">
-      <div class="proType pngImg"></div>
+      <div class="proType pngImg"><!-- {if count($goodtype_2)>0} --><div class="proTypeName">{g_pro_type_name type_id=$goodtype_2[1].cat_id}</div><!-- {/if} --></div>
       <ul class="indexPros">
+        <!-- {if count($goodtype_2)>0} -->
         <!--{foreach from=$goodtype_2 item=goods}-->
         <li class="product">
           <a href="{$goods.url}" class="proImg" target="_blank"><img src="{$goods.goods_thumb}" alt="{$goods.goods_name|escape:html}"></a
@@ -50,13 +53,15 @@
           ><span class="proInfo">￥{$goods.shop_price}</span>
         </li>
         <!--{/foreach}-->
+        <!-- {/if} -->
       </ul>
       </ul>
     </div>
     <!---list_3---->
     <div class="proListBox">
-      <div class="proType pngImg"></div>
+      <div class="proType pngImg"><!-- {if count($goodtype_3)>0} --><div class="proTypeName">{g_pro_type_name type_id=$goodtype_3[0].cat_id}</div><!-- {/if} --></div>
       <ul class="indexPros">
+        <!-- {if count($goodtype_3)>0} -->
         <!--{foreach from=$goodtype_3 item=goods}-->
         <li class="product">
           <a href="{$goods.url}" class="proImg" target="_blank"><img src="{$goods.goods_thumb}" alt="{$goods.goods_name|escape:html}"></a
@@ -64,12 +69,14 @@
           ><span class="proInfo">￥{$goods.shop_price}</span>
         </li>
         <!--{/foreach}-->
+        <!-- {/if} -->
       </ul>
     </div>
     <!---list_4---->
     <div class="proListBox">
-      <div class="proType pngImg"></div>
+      <div class="proType pngImg"><!-- {if count($goodtype_4)>0} --><div class="proTypeName">{g_pro_type_name type_id=$goodtype_4[0].cat_id}</div><!-- {/if} --></div>
       <ul class="indexPros">
+        <!-- {if count($goodtype_4)>0} -->
         <!--{foreach from=$goodtype_4 item=goods}-->
         <li class="product">
           <a href="{$goods.url}" class="proImg" target="_blank"><img src="{$goods.goods_thumb}" alt="{$goods.goods_name|escape:html}"></a
@@ -77,6 +84,7 @@
           ><span class="proInfo">￥{$goods.shop_price}</span>
         </li>
         <!--{/foreach}-->
+        <!-- {/if} -->
       </ul>
     </div>
     <div id="containerEnd"><div class="conEndImg"></div></div>

@@ -2,7 +2,7 @@
 /*global*/
 .textStyle_f{border: #ccc 1px solid;height: 18px;}
 body{
-  font: 12px/1.5 'ËÎÌå','Microsoft Yahei','Simsun',Tahoma,Helvetica,arial,sans-serif;
+  font: 12px/1.5 'Ã‹ÃŽÃŒÃ¥','Microsoft Yahei','Simsun',Tahoma,Helvetica,arial,sans-serif;
   color: #696868;
   /*background-color: #554b3a*/
   background: url(./images/m_1306214511116.jpg);
@@ -197,6 +197,19 @@ body{
   position: absolute;
   left: 13px;
   top: 38px;
+}
+#indexContainer .proListBox .proType .proTypeName{
+  color: white;
+  width: 75px;
+  height: 23px;
+  line-height: 23px;
+  position: absolute;
+  left: 31px;
+  top: 54px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-family: 'é»‘ä½“';
 }
 #indexContainer .proListBox ul.indexPros{
   float: right;
@@ -561,4 +574,7 @@ body{
   letter-spacing: 1px;
   color: #444039;
   font-size: 12px;
+}
+#footer a{
+  color: #444039;
 }

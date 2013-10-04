@@ -29,8 +29,9 @@
   <div id="indexContainer">
     
     <div class="proListBox">
-      <div class="proType pngImg"></div>
+      <div class="proType pngImg"><?php if (count ( $this->_var['goodtype_1'] ) > 0): ?><div class="proTypeName"><?php echo $this->g_pro_type_name(array('type_id'=>$this->_var['goodtype_1']['0']['cat_id'])); ?></div><?php endif; ?></div>
       <ul class="indexPros">
+        <?php if (count ( $this->_var['goodtype_1'] ) > 0): ?>
         <?php $_from = $this->_var['goodtype_1']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods');if (count($_from)):
     foreach ($_from AS $this->_var['goods']):
 ?>
@@ -40,12 +41,14 @@
           ><span class="proInfo">￥<?php echo $this->_var['goods']['shop_price']; ?></span>
         </li>
         <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
+        <?php endif; ?>
       </ul>
     </div>
     
     <div class="proListBox">
-      <div class="proType pngImg"></div>
+      <div class="proType pngImg"><?php if (count ( $this->_var['goodtype_2'] ) > 0): ?><div class="proTypeName"><?php echo $this->g_pro_type_name(array('type_id'=>$this->_var['goodtype_2']['1']['cat_id'])); ?></div><?php endif; ?></div>
       <ul class="indexPros">
+        <?php if (count ( $this->_var['goodtype_2'] ) > 0): ?>
         <?php $_from = $this->_var['goodtype_2']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods');if (count($_from)):
     foreach ($_from AS $this->_var['goods']):
 ?>
@@ -55,13 +58,15 @@
           ><span class="proInfo">￥<?php echo $this->_var['goods']['shop_price']; ?></span>
         </li>
         <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
+        <?php endif; ?>
       </ul>
       </ul>
     </div>
     
     <div class="proListBox">
-      <div class="proType pngImg"></div>
+      <div class="proType pngImg"><?php if (count ( $this->_var['goodtype_3'] ) > 0): ?><div class="proTypeName"><?php echo $this->g_pro_type_name(array('type_id'=>$this->_var['goodtype_3']['0']['cat_id'])); ?></div><?php endif; ?></div>
       <ul class="indexPros">
+        <?php if (count ( $this->_var['goodtype_3'] ) > 0): ?>
         <?php $_from = $this->_var['goodtype_3']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods');if (count($_from)):
     foreach ($_from AS $this->_var['goods']):
 ?>
@@ -71,12 +76,14 @@
           ><span class="proInfo">￥<?php echo $this->_var['goods']['shop_price']; ?></span>
         </li>
         <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
+        <?php endif; ?>
       </ul>
     </div>
     
     <div class="proListBox">
-      <div class="proType pngImg"></div>
+      <div class="proType pngImg"><?php if (count ( $this->_var['goodtype_4'] ) > 0): ?><div class="proTypeName"><?php echo $this->g_pro_type_name(array('type_id'=>$this->_var['goodtype_4']['0']['cat_id'])); ?></div><?php endif; ?></div>
       <ul class="indexPros">
+        <?php if (count ( $this->_var['goodtype_4'] ) > 0): ?>
         <?php $_from = $this->_var['goodtype_4']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods');if (count($_from)):
     foreach ($_from AS $this->_var['goods']):
 ?>
@@ -86,6 +93,7 @@
           ><span class="proInfo">￥<?php echo $this->_var['goods']['shop_price']; ?></span>
         </li>
         <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
+        <?php endif; ?>
       </ul>
     </div>
     <div id="containerEnd"><div class="conEndImg"></div></div>
