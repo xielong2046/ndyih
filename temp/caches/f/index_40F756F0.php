@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:3:{i:0;s:52:"D:/project/local.ecshop.com/themes/default/index.dwt";i:1;s:66:"D:/project/local.ecshop.com/themes/default/library/page_header.lbi";i:2;s:66:"D:/project/local.ecshop.com/themes/default/library/page_footer.lbi";}s:7:"expires";i:1380622101;s:8:"maketime";i:1380618501;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:3:{i:0;s:52:"D:/project/local.ecshop.com/themes/default/index.dwt";i:1;s:66:"D:/project/local.ecshop.com/themes/default/library/page_header.lbi";i:2;s:66:"D:/project/local.ecshop.com/themes/default/library/page_footer.lbi";}s:7:"expires";i:1380646765;s:8:"maketime";i:1380643165;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="ECSHOP v2.7.3" />
@@ -13,7 +13,7 @@
 <script type="text/javascript" src="js/common.js"></script><script type="text/javascript" src="js/jquery.js"></script><script type="text/javascript" src="js/png.js"></script><script type="text/javascript" src="js/ndyih_common.js"></script></head>
 <body>
 <div id="outWrap">
-  <div id="header" class="pngImg">
+    <div id="header" class="pngImg">
     <div class="searchArea">
       <form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()">
         <input type="text" class="h_searchBox" id="keywords" 
@@ -143,7 +143,7 @@
     </div>
     <div id="containerEnd"><div class="conEndImg"></div></div>
   </div>
-  <div id="footer">
+    <div id="footer">
     <p>工作时间:上午:8:00~11:30 下午:14:00~18:00 联系电话:18706428773 谢龙 QQ在线</p>
     <p>Copyright© 2013 版权所有  NDYIH.COM 岚岛壹号 ICP备案号:闽ICP备123456</p>
   </div></body>
