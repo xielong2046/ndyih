@@ -282,6 +282,47 @@ body{
   height: 12px;
   line-height: 12px;
 }
+#proContainer .preNextGood{
+  position: absolute;
+  width: 125px;
+  height: 20px;
+  right: 20px;
+  top: 21px;
+}
+#proContainer .preNextGood a{
+  font-family: '黑体';
+  font-size: 13px;
+  text-decoration: none;
+  display:inline-block;
+  width: 48px;
+  height: 20px;
+  line-height: 20px;
+  position:absolute;
+  top: 0px;
+  color: #000;
+}
+#proContainer .preNextGood a.preGood{
+  background: url(./images/img.png) -979px -379px no-repeat;
+  padding-left: 15px;
+  left: 0px;
+}
+#proContainer .preNextGood a.preGoodHover{
+  background: url(./images/img.png) -979px -400px no-repeat;
+  padding-left: 15px;
+  left: 0px;
+}
+#proContainer .preNextGood a.nextGood{
+  background: url(./images/img.png) -927px -336px no-repeat;
+  padding-right: 15px;
+  text-align: right;
+  right: 0px;
+}
+#proContainer .preNextGood a.nextGoodHover{
+  background: url(./images/img.png) -995px -336px no-repeat;
+  padding-right: 15px;
+  text-align: right;
+  right: 0px;
+}
 #proListContainer .pListoutWrapButtom,
 #proContainer .productWrapButtom{
   position: absolute;
@@ -380,6 +421,19 @@ body{
 }
 #proListContainer .listOutWrap ul.products li.product span.proPrice{
   font-weight: bold;
+}
+#proListContainer .messCon{
+  width: 900px;
+  height: 200px;
+  padding: 100px 0px 0px 0px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+#proListContainer .messCon a{
+  color: red;
 }
 #proContainer .proInfoArea{
   width: 904px;
@@ -490,8 +544,10 @@ body{
   width: 890px;
   height: 500px;
   min-height: 100px;
+  height: auto;
   background: url(./images/cart_bg_1.jpg) left top no-repeat;
   margin: 31px auto 0px auto;
+  padding-bottom: 20px;
 }
 #proContainer .cart_p_2 table.cartDetail{
 }
@@ -501,7 +557,6 @@ body{
   text-align: center;
   color: white;
   letter-spacing: 1px;
-  font-weight: bold;
 }
 #proContainer .cart_p_2 table.cartDetail tfoot tr td{
   height: 29px;
@@ -514,7 +569,8 @@ body{
   line-height: 50px;
   margin-top: 20px;
 }
-#proContainer .cart_p_2 .accountOpt a{
+#proContainer .cart_p_2 .accountOpt a,
+#proContainer .cart_p_2 .accountOpt input{
   display: inline-block;
   height: 40px;
   line-height: 40px;
@@ -522,9 +578,12 @@ body{
   color: #2b2929;
   letter-spacing: 2px;
 }
-#proContainer .cart_p_2 .accountOpt a:hover{
-  background-color: #d9d9d9;
-  color: red;
+#proContainer .cart_p_2 .accountOpt .upCart{
+  height: 42px;
+  line-height: 41px;
+  width: 102px;
+  position: relative;
+  top: 1px;
 }
 #proContainer .cart_p_2 .accountOpt a.goShop{
   width: 100px;

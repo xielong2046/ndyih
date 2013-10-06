@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:3:{i:0;s:52:"D:/project/local.ecshop.com/themes/default/index.dwt";i:1;s:66:"D:/project/local.ecshop.com/themes/default/library/page_header.lbi";i:2;s:66:"D:/project/local.ecshop.com/themes/default/library/page_footer.lbi";}s:7:"expires";i:1380895977;s:8:"maketime";i:1380892377;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:3:{i:0;s:52:"D:/project/local.ecshop.com/themes/default/index.dwt";i:1;s:66:"D:/project/local.ecshop.com/themes/default/library/page_header.lbi";i:2;s:66:"D:/project/local.ecshop.com/themes/default/library/page_footer.lbi";}s:7:"expires";i:1381071872;s:8:"maketime";i:1381068272;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="ECSHOP v2.7.3" />
