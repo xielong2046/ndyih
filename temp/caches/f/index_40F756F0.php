@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:3:{i:0;s:52:"D:/project/local.ecshop.com/themes/default/index.dwt";i:1;s:66:"D:/project/local.ecshop.com/themes/default/library/page_header.lbi";i:2;s:66:"D:/project/local.ecshop.com/themes/default/library/page_footer.lbi";}s:7:"expires";i:1381161962;s:8:"maketime";i:1381158362;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:3:{i:0;s:52:"D:/project/local.ecshop.com/themes/default/index.dwt";i:1;s:66:"D:/project/local.ecshop.com/themes/default/library/page_header.lbi";i:2;s:66:"D:/project/local.ecshop.com/themes/default/library/page_footer.lbi";}s:7:"expires";i:1381162676;s:8:"maketime";i:1381159076;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="ECSHOP v2.7.3" />
@@ -13,7 +13,7 @@
 <script type="text/javascript" src="js/common.js"></script><script type="text/javascript" src="js/jquery.js"></script><script type="text/javascript" src="js/png.js"></script><script type="text/javascript" src="js/ndyih_common.js"></script></head>
 <body>
 <div id="outWrap">
-    <div id="header" class="pngImg">
+  <div id="header" class="pngImg">
     <div class="searchArea">
       <form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()">
         <input type="text" class="h_searchBox" id="keywords" 
