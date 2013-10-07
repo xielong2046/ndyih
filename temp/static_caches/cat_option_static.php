@@ -16,6 +16,22 @@ $data = array (
     'id' => '6',
     'name' => '手机配件',
   ),
+  8 => 
+  array (
+    'cat_id' => '8',
+    'cat_name' => '耳机',
+    'measure_unit' => '',
+    'parent_id' => '6',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => '3',
+    'level' => 1,
+    'id' => '8',
+    'name' => '耳机',
+  ),
   9 => 
   array (
     'cat_id' => '9',
@@ -64,22 +80,6 @@ $data = array (
     'id' => '7',
     'name' => '充电器',
   ),
-  8 => 
-  array (
-    'cat_id' => '8',
-    'cat_name' => '耳机',
-    'measure_unit' => '',
-    'parent_id' => '6',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => '3',
-    'level' => 1,
-    'id' => '8',
-    'name' => '耳机',
-  ),
   1 => 
   array (
     'cat_id' => '1',
@@ -95,6 +95,22 @@ $data = array (
     'level' => 0,
     'id' => '1',
     'name' => '手机类型',
+  ),
+  5 => 
+  array (
+    'cat_id' => '5',
+    'cat_name' => '双模手机',
+    'measure_unit' => '',
+    'parent_id' => '1',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '5',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 2,
+    'level' => 1,
+    'id' => '5',
+    'name' => '双模手机',
   ),
   2 => 
   array (
@@ -143,22 +159,6 @@ $data = array (
     'level' => 1,
     'id' => '4',
     'name' => '3G手机',
-  ),
-  5 => 
-  array (
-    'cat_id' => '5',
-    'cat_name' => '双模手机',
-    'measure_unit' => '',
-    'parent_id' => '1',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '5',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 2,
-    'level' => 1,
-    'id' => '5',
-    'name' => '双模手机',
   ),
   12 => 
   array (

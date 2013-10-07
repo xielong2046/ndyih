@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:3:{i:0;s:52:"D:/project/local.ecshop.com/themes/default/index.dwt";i:1;s:66:"D:/project/local.ecshop.com/themes/default/library/page_header.lbi";i:2;s:66:"D:/project/local.ecshop.com/themes/default/library/page_footer.lbi";}s:7:"expires";i:1381071872;s:8:"maketime";i:1381068272;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:3:{i:0;s:52:"D:/project/local.ecshop.com/themes/default/index.dwt";i:1;s:66:"D:/project/local.ecshop.com/themes/default/library/page_header.lbi";i:2;s:66:"D:/project/local.ecshop.com/themes/default/library/page_footer.lbi";}s:7:"expires";i:1381161962;s:8:"maketime";i:1381158362;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="ECSHOP v2.7.3" />
@@ -23,14 +23,8 @@
     </div>
     <div class="h_logo pngImg"></div>
     <div class="shortcutFun">
-            <a href="flow.php">购物车</a> /
-            <a href="pick_out.php">选购中心</a> /
-            <a href="user.php">登陆</a> /
-            <!---<a href="#">登 陆</a
-      > / <a href="#">购物车</a> / <a href="#">个人中心</a
-      > / <a href="#">订 单</a> / <a href="#">信 息</a> 
-      ---->
-    </div>
+      554fcae493e564ee0dc75bdf2ebf94camember_info|a:1:{s:4:"name";s:11:"member_info";}554fcae493e564ee0dc75bdf2ebf94ca            <a href="flow.php"> 购物车 </a> /
+          </div>
   </div>
   <div id="navigation">
     <a href="/">首 页</a>/

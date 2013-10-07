@@ -8,17 +8,19 @@
     </div>
     <div class="h_logo pngImg"></div>
     <div class="shortcutFun">
+      <?php 
+$k = array (
+  'name' => 'member_info',
+);
+echo $this->_echash . $k['name'] . '|' . serialize($k) . $this->_echash;
+?>
       <?php $_from = $this->_var['navigator_list']['top']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'nav');$this->_foreach['nav_top_list'] = array('total' => count($_from), 'iteration' => 0);
 if ($this->_foreach['nav_top_list']['total'] > 0):
     foreach ($_from AS $this->_var['nav']):
         $this->_foreach['nav_top_list']['iteration']++;
 ?>
-      <a href="<?php echo $this->_var['nav']['url']; ?>"><?php echo $this->_var['nav']['name']; ?></a> /
+      <a href="<?php echo $this->_var['nav']['url']; ?>"> <?php echo $this->_var['nav']['name']; ?> </a> /
       <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-      <!---<a href="#">登 陆</a
-      > / <a href="#">购物车</a> / <a href="#">个人中心</a
-      > / <a href="#">订 单</a> / <a href="#">信 息</a> 
-      ---->
     </div>
   </div>
   <div id="navigation">

@@ -8,13 +8,10 @@
     </div>
     <div class="h_logo pngImg"></div>
     <div class="shortcutFun">
+      {insert name='member_info'}
       <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} -->
-      <a href="{$nav.url}">{$nav.name}</a> /
+      <a href="{$nav.url}"> {$nav.name} </a> /
       <!-- {/foreach} -->
-      <!---<a href="#">登 陆</a
-      > / <a href="#">购物车</a> / <a href="#">个人中心</a
-      > / <a href="#">订 单</a> / <a href="#">信 息</a> 
-      ---->
     </div>
   </div>
   <div id="navigation">

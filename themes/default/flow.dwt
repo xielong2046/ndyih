@@ -21,6 +21,7 @@
   <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
   <div id="proContainer">
     <div class="productWrapTop pngImg"></div>
+    <!-- {if $step eq "cart"} -->
     <div class="cart_p_1">
         <div class="p_1_title pngImg"></div>
     </div>
@@ -73,6 +74,141 @@
       </div>
       </form>
     </div>
+    <!--{/if}-->
+
+    <!-- {if $step eq "consignee"} -->
+    {insert_scripts files='region.js,utils.js'}
+    <script type="text/javascript">
+      region.isAdmin = false;
+      {foreach from=$lang.flow_js item=item key=key}
+      var {$key} = "{$item}";
+      {/foreach}
+
+      {literal}
+      onload = function() {
+        if (!document.all)
+        {
+          document.forms['theForm'].reset();
+        }
+      }
+      {/literal}
+    </script>
+    <div class="consignee">
+      <div class="header pngImng">{$lang.consignee_info}</div>
+      <!-- {foreach from=$consignee_list item=consignee key=sn} -->
+      <!-- #BeginLibraryItem "/Library/consignee.lbi" --><!-- #EndLibraryItem -->
+      <!-- {/foreach} -->
+    </div>
+    <!--{/if}-->
+
+    <!-- {if $step eq "login"} -->
+    {insert_scripts files='utils.js,user.js'}
+    <script type="text/javascript">
+    {foreach from=$lang.flow_login_register item=item key=key}
+      var {$key} = "{$item}";
+    {/foreach}
+
+    {literal}
+    function checkLoginForm(frm) {
+      if (Utils.isEmpty(frm.elements['username'].value)) {
+        alert(username_not_null);
+        return false;
+      }
+
+      if (Utils.isEmpty(frm.elements['password'].value)) {
+        alert(password_not_null);
+        return false;
+      }
+
+      return true;
+    }
+
+    function checkSignupForm(frm) {
+      if (Utils.isEmpty(frm.elements['username'].value)) {
+        alert(username_not_null);
+        return false;
+      }
+
+      if (Utils.trim(frm.elements['username'].value).match(/^\s*$|^c:\\con\\con$|[%,\'\*\"\s\t\<\>\&\\]/))
+      {
+        alert(username_invalid);
+        return false;
+      }
+
+      if (Utils.isEmpty(frm.elements['email'].value)) {
+        alert(email_not_null);
+        return false;
+      }
+
+      if (!Utils.isEmail(frm.elements['email'].value)) {
+        alert(email_invalid);
+        return false;
+      }
+
+      if (Utils.isEmpty(frm.elements['password'].value)) {
+        alert(password_not_null);
+        return false;
+      }
+
+      if (frm.elements['password'].value.length < 6) {
+        alert(password_lt_six);
+        return false;
+      }
+
+      if (frm.elements['password'].value != frm.elements['confirm_password'].value) {
+        alert(password_not_same);
+        return false;
+      }
+      return true;
+    }
+    {/literal}
+    </script>
+    <!-- 开始用户登录注册界面 -->
+     <div class="loginArea pngImg">
+      <div class="regLink"><a href="user.php?act=register">立即注册!</a></div>
+      <div class="loginForm">
+        <form action="flow.php?step=login" method="post" name="loginForm" id="loginForm" onsubmit="return checkLoginForm(this)">
+          <table border="0" cellspacing="5" cellpadding="5" width="100%" height="100%" class="mgTop2">
+            <tr>
+              <td width="35%" align="right"><label for="username">{$lang.username}:</label></td>
+              <td><input name="username" type="text" class="borderCCC mgLeft10 width151" id="username" /></td>
+            </tr>
+            <tr>
+              <td align="right"><label for="password">{$lang.password}:</label></td>
+              <td><input name="password" class="borderCCC mgLeft10 width151" type="password" /></td>
+            </tr>
+            <!-- 判断是否启用验证码{if $enabled_login_captcha} -->
+            <tr>
+              <td align="right"><label for="captcha">{$lang.comment_captcha}:</label></td>
+              <td><input type="text"  name="captcha" id="captcha" class="borderCCC mgLeft10 width151"/></td>
+            </tr>
+            <tr>
+              <td colspan="10" align="center">
+                <img src="captcha.php?is_login=1&{$rand}" alt="captcha" style="vertical-align: middle;cursor: pointer;" onClick="this.src='captcha.php?is_login=1&'+Math.random()" />
+              </td>
+            </tr>
+            <!--{/if}-->
+            <tr>
+              <td colspan="10" align="center">
+                <input type="checkbox" value="1" class="borderCCC" id="remember" name="remember"> <label for="remember">记住密码</label>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="10" align="center">
+                <input type="submit" class="loginBtn mgRight10" name="login" value="{$lang.forthwith_login}" />
+                <!-- {if $anonymous_buy eq 1} 是否允许未登录用户购物 -->
+                <input type="button"class="directBuyBtn mgRight20" value="{$lang.direct_shopping}" onclick="location.href='flow.php?step=consignee&amp;direct_shopping=1'"/>
+                <!-- {/if} -->
+                <input name="act" type="hidden" value="signin" />
+              </td>
+            </tr>
+          </form>
+        </table>
+      </div>
+    </div>
+    <div class="formBg pngImg"></div>
+    <!-- 结束用户登录注册界面 -->
+    <!-- {/if} -->
     <div class="clr"></div>
     <div class="productWrapButtom pngImg"></div>
   </div>

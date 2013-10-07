@@ -41,6 +41,19 @@ $data = array (
   ),
   3 => 
   array (
+    'cat_id' => '5',
+    'cat_name' => '双模手机',
+    'measure_unit' => '',
+    'parent_id' => '1',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '5',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 2,
+  ),
+  4 => 
+  array (
     'cat_id' => '2',
     'cat_name' => 'CDMA手机',
     'measure_unit' => '',
@@ -52,7 +65,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  4 => 
+  5 => 
   array (
     'cat_id' => '3',
     'cat_name' => 'GSM手机',
@@ -65,7 +78,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '12',
   ),
-  5 => 
+  6 => 
   array (
     'cat_id' => '4',
     'cat_name' => '3G手机',
@@ -78,20 +91,20 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '2',
   ),
-  6 => 
+  7 => 
   array (
-    'cat_id' => '5',
-    'cat_name' => '双模手机',
+    'cat_id' => '8',
+    'cat_name' => '耳机',
     'measure_unit' => '',
-    'parent_id' => '1',
+    'parent_id' => '6',
     'is_show' => '1',
     'show_in_nav' => '0',
-    'grade' => '5',
+    'grade' => '0',
     'sort_order' => '50',
     'has_children' => '0',
-    'goods_num' => 2,
+    'goods_num' => '3',
   ),
-  7 => 
+  8 => 
   array (
     'cat_id' => '9',
     'cat_name' => '电池',
@@ -104,7 +117,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  8 => 
+  9 => 
   array (
     'cat_id' => '11',
     'cat_name' => '读卡器和内存卡',
@@ -117,7 +130,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '2',
   ),
-  9 => 
+  10 => 
   array (
     'cat_id' => '7',
     'cat_name' => '充电器',
@@ -129,19 +142,6 @@ $data = array (
     'sort_order' => '50',
     'has_children' => '0',
     'goods_num' => 0,
-  ),
-  10 => 
-  array (
-    'cat_id' => '8',
-    'cat_name' => '耳机',
-    'measure_unit' => '',
-    'parent_id' => '6',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => '3',
   ),
   11 => 
   array (
