@@ -21,6 +21,15 @@
   <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
   <div id="proContainer">
     <div class="productWrapTop pngImg"></div>
+    
+    <!-- {if $step eq "checkout"} 开始订单确认界面 -->
+    <div class="checkOutWrap">
+      <div class="checkoutBox">
+        <div class="boxHeader"><span>{$lang.goods_list}</span></div>
+      </div>
+    </div>
+    <!--{/if}-->
+
     <!-- {if $step eq "cart"} -->
     <div class="cart_p_1">
         <div class="p_1_title pngImg"></div>

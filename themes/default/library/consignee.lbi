@@ -33,34 +33,34 @@
             </td>
           </tr>
           <tr>
-            <td>{$lang.consignee_name}:</td>
+            <td><label for="consignee_{$sn}">{$lang.consignee_name}:</label></td>
             <td><input name="consignee" type="text" class="borderCCC width151 height20" id="consignee_{$sn}" value="{$consignee.consignee|escape}" />{$lang.require_field} </td>
-            <td>{$lang.email_address}:</td>
+            <td><label for="email_{$sn}">{$lang.email_address}:</label></td>
             <td><input name="email" type="text" class="borderCCC width151 height20"  id="email_{$sn}" value="{$consignee.email|escape}" />{$lang.require_field} </td>
           </tr>
           <!-- {if $real_goods_count gt 0} -->
           <!-- 购物车中存在实体商品显示详细地址以及邮政编码 -->
           <tr>
-            <td>{$lang.detailed_address}:</td>
+            <td><label for="address_{$sn}">{$lang.detailed_address}:</label></td>
             <td><input name="address" type="text" class="borderCCC width151 height20"  id="address_{$sn}" value="{$consignee.address|escape}" />
             {$lang.require_field}</td>
-            <td>{$lang.postalcode}:</td>
+            <td><label for="zipcode_{$sn}">{$lang.postalcode}:</label></td>
             <td><input name="zipcode" type="text" class="borderCCC width151 height20"  id="zipcode_{$sn}" value="{$consignee.zipcode|escape}" /></td>
           </tr>
           <!-- {/if} -->
           <tr>
-            <td>{$lang.phone}:</td>
+            <td><label for="tel_{$sn}">{$lang.phone}:</label></td>
             <td><input name="tel" type="text" class="borderCCC width151 height20"  id="tel_{$sn}" value="{$consignee.tel|escape}" />
             {$lang.require_field}</td>
-            <td>{$lang.backup_phone}:</td>
+            <td><label for="mobile_{$sn}">{$lang.backup_phone}:</label></td>
             <td><input name="mobile" type="text" class="borderCCC width151 height20"  id="mobile_{$sn}" value="{$consignee.mobile|escape}" /></td>
           </tr>
           <!-- {if $real_goods_count gt 0} -->
           <!-- 购物车中存在实体商品显示最佳送货时间及标志行建筑 -->
           <tr>
-            <td>{$lang.sign_building}:</td>
+            <td><label for="sign_building_{$sn}">{$lang.sign_building}:</label></td>
             <td><input name="sign_building" type="text" class="borderCCC width151 height20"  id="sign_building_{$sn}" value="{$consignee.sign_building|escape}" /></td>
-            <td>{$lang.deliver_goods_time}:</td>
+            <td><label for="best_time_{$sn}">{$lang.deliver_goods_time}:</label></td>
             <td><input name="best_time" type="text"  class="borderCCC width151 height20" id="best_time_{$sn}" value="{$consignee.best_time|escape}" /></td>
           </tr>
           <!-- {/if} -->
