@@ -425,7 +425,8 @@ body{
 #proListContainer .listOutWrap ul.products li.product span.proPrice{
   font-weight: bold;
 }
-#proListContainer .messCon{
+#proListContainer .messCon,
+#proContainer .messCon{
   width: 900px;
   height: 200px;
   padding: 100px 0px 0px 0px;
@@ -435,7 +436,18 @@ body{
   letter-spacing: 2px;
   line-height: 25px;
 }
-#proListContainer .messCon a{
+#proContainer .messCon h6{
+  font-size: 13px;
+}
+#proContainer .messCon table{
+  line-height: 30px;
+  font-size: 13px;
+  width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+#proListContainer .messCon a,
+#proContainer .messCon a{
   color: red;
 }
 #proContainer .proInfoArea{
@@ -444,6 +456,44 @@ body{
   margin: 70px auto 0 auto;
   position: relative;
   overflow: hidden;
+}
+#proListContainer .userCenterBox{
+  width: 927px;
+  min-height: 500px;
+  height: auto;
+  margin: 10px auto 10px auto;
+}
+#proListContainer .userCenterBox .userMenu{
+  width: 201px;
+  min-height: 100px;
+  height: auto;
+  float:left;
+  background: #d3c3aa;
+  border: #b49d78 1px solid;
+}
+#proListContainer .userCenterBox .userMenu a{
+  display: block;
+  width: 180px;
+  height: 30px;
+  border-bottom: #b49d78 1px dashed;
+  color: #795437;
+  line-height: 30px;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  background: url(./images/short_cut.png) 163px -36px no-repeat;
+}
+#proListContainer .userCenterBox .userMenu a.curs{
+  font-weight: bold;
+  background: url(./images/short_cut.png) 163px 8px no-repeat;
+}
+#proListContainer .userCenterBox .ucenterCon{
+  background: #d3c3aa;
+  border: #b49d78 1px solid;
+  width: 719px;
+  min-height: 500px;
+  height: auto;
+  margin: 0px 0px 0px 208px;
+  color: #3f3a33;
 }
 #proContainer .proInfoArea .proImg{
   width: 420px;
@@ -750,6 +800,49 @@ body{
   height: 33px;
   background: url(./images/cart_bg_1.jpg) left top no-repeat;
   position: relative;
+}
+#proContainer .checkOutWrap .checkoutBox .boxHeader span{
+  display: inline-block;
+  color: white;
+  margin: 8px 0px 0px 25px;
+  letter-spacing: 2px;
+}
+#proContainer .checkOutWrap .checkoutBox .boxHeader a{
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  color: white;
+  letter-spacing: 2px;
+}
+#proContainer .checkOutWrap .checkoutBox .boxHeader a:hover{
+  text-decoration: underline;
+}
+#proContainer .checkOutWrap .checkoutBox table{
+  width: 800px;
+  line-height: 35px;
+  background: none;
+  margin: 0 auto;
+}
+#proContainer .checkOutWrap .checkoutBox table a{
+  color: #696868;
+}
+#proContainer .checkOutWrap .checkoutBox table th{
+  text-align: left;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+#proContainer .checkOutWrap .orderSub{
+  text-align: center;
+  margin: 30px 0px 10px 0px;
+}
+#proContainer .checkOutWrap .yzhbBtn{
+  width: 75px;
+  height: 24px;
+  background: url(./images/yzhbBtn.png) left top no-repeat;
+  color: white;
+  font-family: '微软雅黑','microsoft Yahei','宋体';
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 #footer{
   width: 942px;
