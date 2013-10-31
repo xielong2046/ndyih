@@ -18,122 +18,149 @@
 </head>
 <body>
 <div id="outWrap">
-  <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
-  <div id="proContainer">
-    <div class="productWrapTop"></div>
-    <!--#登录界面 start-->
-    <!-- {if $action eq 'login'} -->
-    <div class="loginArea pngImg">
-      <div class="regLink"><a href="user.php?act=register">立即注册!</a></div>
-      <div class="loginForm">
-        <form name="formLogin" action="user.php" method="post" onSubmit="return userLogin()">
-        <table border="0" cellspacing="5" cellpadding="5" width="100%" height="100%" class="mgTop2">
-          <tr>
-            <td width="35%" align="right"><label for="username">用户名:</label></td>
-            <td><input type="text" value="" id="username" name="username" class="borderCCC mgLeft10 width151"></td>
-          </tr>
-          <tr>
-            <td align="right"><label for="password">密码:</label></td>
-            <td><input type="password" value="" name="password" id="password" class="borderCCC mgLeft10 width151"></td>
-          </tr>
-          <!-- 判断是否启用验证码{if $enabled_captcha} -->
-          <tr>
-            <td align="right"><label for="captcha">{$lang.comment_captcha}:</label></td>
-            <td><input type="text"  name="captcha" id="captcha" class="borderCCC mgLeft10 width151" /></td>
-          </tr>
-          <tr>
-            <td colspan="10" align="center"><img src="captcha.php?is_login=1&{$rand}" alt="captcha" style="vertical-align: middle;cursor: pointer;" onClick="this.src='captcha.php?is_login=1&'+Math.random()" /> </td>
-          </tr>
-          <!--{/if}-->
-          <tr>
-            <td colspan="10" align="center">
-              <input type="checkbox" value="" class="borderCCC" id="remember" name="remember"> <label for="remember">记住密码</label>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="10" align="center">
-              <input type="hidden" name="act" value="act_login" />
-              <input type="hidden" name="back_act" value="{$back_act}" />
-              <input type="submit" value="登 陆" class="loginBtn mgRight20"><input 
-              type="reset" value="重 置" class="loginBtn">
-            </td>
-          </tr>
-        </table>
-      </form>
-      </div>
-    </div>
-    <!--{/if}-->
-    <!--#登录界面 end-->
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div id="proContainer">
+<div class="productWrapTop"></div>
+<!--#登录界面 start-->
+<!-- {if $action eq 'login'} -->
+<div class="loginArea pngImg">
+<div class="regLink"><a href="user.php?act=register">立即注册!</a></div>
+<div class="loginForm">
+<form name="formLogin" action="user.php" method="post" onSubmit="return userLogin()">
+<table border="0" cellspacing="5" cellpadding="5" width="100%" height="100%" class="mgTop2">
+<tr>
+<td width="35%" align="right"><label for="username">用户名:</label></td>
+<td><input type="text" value="" id="username" name="username" class="borderCCC mgLeft10 width151"></td>
+</tr>
+<tr>
+<td align="right"><label for="password">密码:</label></td>
+<td><input type="password" value="" name="password" id="password" class="borderCCC mgLeft10 width151"></td>
+</tr>
+<!-- 判断是否启用验证码{if $enabled_captcha} -->
+<tr>
+<td align="right"><label for="captcha">{$lang.comment_captcha}:</label></td>
+<td><input type="text"  name="captcha" id="captcha" class="borderCCC mgLeft10 width151" /></td>
+</tr>
+<tr>
+<td colspan="10" align="center"><img src="captcha.php?is_login=1&{$rand}" alt="captcha" style="vertical-align: middle;cursor: pointer;" onClick="this.src='captcha.php?is_login=1&'+Math.random()" /> </td>
+</tr>
+<!--{/if}-->
+<tr>
+<td colspan="10" align="center">
+<input type="checkbox" value="" class="borderCCC" id="remember" name="remember"> <label for="remember">记住密码</label>
+</td>
+</tr>
+<tr>
+<td colspan="10" align="center">
+<input type="hidden" name="act" value="act_login" />
+<input type="hidden" name="back_act" value="{$back_act}" />
+<input type="submit" value="登 陆" class="loginBtn mgRight20"><input 
+type="reset" value="重 置" class="loginBtn">
+</td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+<!--{/if}-->
+<!--#登录界面 end-->
 
-    <!--*会员注册界面 start-->
-    <!--{if $action eq 'register'}-->
-    <div class="regArea pngImg">
-      <div class="loginLink"><a href="user.php">登陆!</a></div>
-      <div class="regForm">
-        <form action="user.php" method="post" name="formUser" onsubmit="return register();">
-        <table border="0" cellspacing="5" cellpadding="5" width="100%" height="100%" class="mgTop2">
-          <tr>
-            <td width="35%" align="right"><label for="username">{$lang.label_username}:</label></td>
-            <td><input type="text" value="" id="username" name="username" class="borderCCC mgLeft10 width151" onblur="is_registered(this.value);"></td>
-          </tr>
-          <tr>
-            <td align="right"><label for="email">{$lang.label_email}:</label></td>
-            <td><input type="text" value="" name="email" id="email" class="borderCCC mgLeft10 width151" onblur="checkEmail(this.value);"></td>
-          </tr>
-          <tr>
-            <td align="right"><label for="password1">{$lang.label_password}:</label></td>
-            <td><input type="password" value="" name="password" id="password1" class="borderCCC mgLeft10 width151" onblur="check_password(this.value);"></td>
-          </tr>
-          <tr>
-            <td align="right"><label for="conform_password">{$lang.label_confirm_password}:</label></td>
-            <td><input type="password" value="" name="confirm_password" id="conform_password" class="borderCCC mgLeft10 width151" onblur="check_conform_password(this.value);"></td>
-          </tr>
-          <tr>
-            <td align="right"><label for="sel_question">{$lang.passwd_question}:</label></td>
-            <td>
-                <select name='sel_question' id="sel_question" class="borderCCC mgLeft10 width151">
-                  <option value='0'>{$lang.sel_question}</option>
-                  {html_options options=$passwd_questions}
-                </select>
-            </td>
-          </tr>
-          <tr>
-            <td align="right"><label for="passwd_answer">{$lang.passwd_answer}:</label></td>
-            <td><input type="text" value="" name="passwd_answer" id="passwd_answer" class="borderCCC mgLeft10 width151"></td>
-          </tr>
-          <!-- 判断是否启用验证码{if $enabled_captcha} -->
-          <tr>
-            <td align="right"><label for="captcha">{$lang.comment_captcha}:</label></td>
-            <td><input type="text"  name="captcha" id="captcha" class="borderCCC mgLeft10 width151" /></td>
-          </tr>
-          <tr>
-            <td colspan="10" align="center"><img src="captcha.php?{$rand}" alt="captcha" style="vertical-align: middle;cursor: pointer;" onClick="this.src='captcha.php?'+Math.random()" /></td>
-          </tr>
-          <!--{/if}-->
-          <tr>
-            <td colspan="10" align="center">
-              <input type="checkbox" value="1" name="agreement" id="agreement" class="borderCCC mgLeft10" checked="checked">{$lang.agreement}
-            </td>
-          </tr>
-          <tr>
-            <td colspan="10" align="center">
-              <input name="act" type="hidden" value="act_register" >
-              <input type="hidden" name="back_act" value="{$back_act}" />
-              <input type="submit" value="提 交" class="loginBtn mgRight20"><input 
-              type="reset" value="重 置" class="loginBtn">
-            </td>
-          </tr>
-        </table>
-      </form>
-      </div>
-    </div>
-    <!--{/if}-->
-    <!--#会员注册界面 end-->
-    <div class="formBg pngImg"></div>
-    <div class="productWrapButtom"></div>
-  </div>
-  <div id="containerEnd" style="border-width:0px;"><div class="conEndImg"></div></div>
-  <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> 
+<!--*会员注册界面 start-->
+<!--{if $action eq 'register'}-->
+<!-- {if $shop_reg_closed eq 1} -->
+<div class="stopReg">{$lang.shop_register_closed}</div>
+<!-- {else} -->
+{insert_scripts files='utils.js'}
+<div class="regArea pngImg">
+<div class="loginLink"><a href="user.php">登陆!</a></div>
+<div class="regForm">
+<form action="user.php" method="post" name="formUser" onsubmit="return register();">
+<table border="0" cellspacing="5" cellpadding="5" width="100%" height="100%" class="mgTop2">
+<tr>
+<td width="35%" align="right"><label for="username">{$lang.label_username}:</label></td>
+<td><input type="text" value="" id="username" name="username" class="borderCCC mgLeft10 width151" onblur="is_registered(this.value);"><span id="username_notice" style="color:#FF0000"> *</span></td>
+</tr>
+<tr>
+<td align="right"><label for="email">{$lang.label_email}:</label></td>
+<td><input type="text" value="" name="email" id="email" class="borderCCC mgLeft10 width151" onblur="checkEmail(this.value);"><span id="email_notice" style="color:#FF0000"> *</span></td>
+</tr>
+<tr>
+<td align="right"><label for="password1">{$lang.label_password}:</label></td>
+<td><input type="password" value="" name="password" id="password1" class="borderCCC mgLeft10 width151" onblur="check_password(this.value);"><span style="color:#FF0000" id="password_notice"> *</span></td>
+</tr>
+<tr>
+<td align="right"><label for="confirm_password">{$lang.label_confirm_password}:</label></td>
+<td><input type="password" value="" name="confirm_password" id="conform_password" class="borderCCC mgLeft10 width151" onblur="check_conform_password(this.value);"><span style="color:#FF0000" id="conform_password_notice"> *</span></td>
+</tr>
+<!-- {foreach from=$extend_info_list item=field} -->
+<!-- {if $field.id eq 6} -->
+<tr>
+<td align="right"><label for="sel_question">{$lang.passwd_question}:</label></td>
+<td>
+<select name='sel_question' id="sel_question" class="borderCCC mgLeft10 width151">
+<option value='0'>{$lang.sel_question}</option>
+{html_options options=$passwd_questions}
+</select>
+</td>
+</tr>
+<tr>
+<td align="right"><label for="passwd_answer">{$lang.passwd_answer}:</label></td>
+<td><input type="text" value="" name="passwd_answer" id="passwd_answer" class="borderCCC mgLeft10 width151"><!-- {if $field.is_need} --><span style="color:#FF0000"> *</span><!-- {/if} --></td>
+</tr>
+<!-- {else} -->
+<tr>
+<td align="right" <!-- {if $field.is_need} -->id="extend_field{$field.id}i"<!--{/if}-->>{$field.reg_field_name}:
+<td>
+<input name="extend_field{$field.id}" type="text" size="25" class="inputBg borderCCC width151 mgLeft10" /><!-- {if $field.is_need} --><span style="color:#FF0000"> *</span><!-- {/if} -->
+</td>
+</tr>
+<!-- {/if} -->
+<!-- {/foreach} -->
+<!-- 判断是否启用验证码{if $enabled_captcha} -->
+<tr>
+<td align="right"><label for="captcha">{$lang.comment_captcha}:</label></td>
+<td><input type="text"  name="captcha" id="captcha" class="borderCCC mgLeft10 width151" /></td>
+</tr>
+<tr>
+<td colspan="10" align="center"><img src="captcha.php?{$rand}" alt="captcha" style="vertical-align: middle;cursor: pointer;" onClick="this.src='captcha.php?'+Math.random()" /></td>
+</tr>
+<!--{/if}-->
+<tr>
+<td colspan="10" align="center">
+<input type="checkbox" value="1" name="agreement" id="agreement" class="borderCCC mgLeft10" checked="checked">{$lang.agreement}
+</td>
+</tr>
+<tr>
+<td colspan="10" align="center">
+<input name="act" type="hidden" value="act_register" >
+<input type="hidden" name="back_act" value="{$back_act}" />
+<input type="submit" value="提 交" class="loginBtn mgRight20"><input 
+type="reset" value="重 置" class="loginBtn">
+</td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+<!--{/if}-->
+<!--{/if}-->
+<!--#会员注册界面 end-->
+
+
+<div class="formBg pngImg"></div>
+<div class="productWrapButtom"></div>
+</div>
+<div id="containerEnd" style="border-width:0px;"><div class="conEndImg"></div></div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> 
 </div>
 </body>
+<!-- {if $shop_reg_closed != 1} -->
+<script type="text/javascript">
+var process_request = "{$lang.process_request}";
+{foreach from=$lang.passport_js item=item key=key}
+var {$key} = "{$item}";
+{/foreach}
+var username_exist = "{$lang.username_exist}";
+</script>
+<!--{/if}-->
 </html>

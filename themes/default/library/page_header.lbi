@@ -1,3 +1,8 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript">
+var process_request = "{$lang.process_request}";
+</script>
+{insert_scripts files='transport.js,utils.js,jquery.json-1.3.js'}
   <div id="header" class="pngImg">
     <div class="searchArea">
       <form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()">
@@ -15,8 +20,8 @@
     </div>
   </div>
   <div id="navigation">
-    <a href="/">首 页</a>/
+    <a href="/"  class="{if $navigator_list.config.index eq 1}cur{/if} mgLeft50 index">首 页</a><div class="spLine"></div>
     <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav} -->
-    <a href="{$nav.url}">{$nav.name}</a>/
+    <a href="{$nav.url}"  class="{if $nav.active eq 1}cur{/if}">{$nav.name}</a><div class="spLine"></div>
     <!-- {/foreach} -->
   </div>

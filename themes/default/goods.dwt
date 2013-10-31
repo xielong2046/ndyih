@@ -14,7 +14,7 @@
 <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
 <link rel="alternate" type="application/rss+xml" title="RSS|{$page_title}" href="{$feed_url}" />
 {* 包含脚本文件 *}
-{insert_scripts files='common.js,jquery.js,png.js,transport.js,ndyih_common.js'}
+{insert_scripts files='common.js,jquery.js,png.js','jquery.json-1.3.js'}
 </head>
 <body>
 <div id="outWrap">
@@ -32,13 +32,13 @@
         <span class="productName">{$goods.goods_name|escape:html}</span>
         <div class="proPram">
           <ul>
-            <li><span class="pramName">价 格：</span>{$goods.shop_price_formated}</li>
-            <li><span class="pramName">品 牌：</span>{$goods.goods_brand}</li>
-            <li><span class="pramName">商品货号：</span>{$goods.goods_sn}</li>
-            <li><span class="pramName">上架时间：</span>{$goods.add_time}</li>
-            <li><span class="pramName">{$lang.goods_weight}：</span>{$goods.goods_weight}</li>
-            <li><span class="pramName">{$lang.amount}：</span><font id="ECS_GOODS_AMOUNT">￥1000</font></li>
-            <li><span class="pramName">{$lang.number}：</span><input type="text" id="number" name="number" class="textStyle_f" size="5" value="1" onblur="changePrice()"></li>
+            <li class="pngImg"><span class="pramName">价 格：</span>{$goods.shop_price_formated}</li>
+            <li class="pngImg"><span class="pramName">品 牌：</span>{$goods.goods_brand}</li>
+            <li class="pngImg"><span class="pramName">商品货号：</span>{$goods.goods_sn}</li>
+            <li class="pngImg"><span class="pramName">上架时间：</span>{$goods.add_time}</li>
+            <li class="pngImg"><span class="pramName">{$lang.goods_weight}：</span>{$goods.goods_weight}</li>
+            <li class="pngImg"><span class="pramName">{$lang.amount}：</span><font id="ECS_GOODS_AMOUNT">￥1000</font></li>
+            <li class="pngImg"><span class="pramName">{$lang.number}：</span><input type="text" id="number" name="number" class="textStyle_f" size="5" value="1" onblur="changePrice()"></li>
           </ul>
         </div>
       </div>
@@ -48,7 +48,28 @@
       </form>
     </div>
     <div class="proDetial">
-      <div style="text-align:center;">{$goods.goods_desc}</div>
+      <div class="proDetialCon">
+        <div class="switchDetialType">
+          <a class="current pngImg" rel="spms">商品描述</a><a class="pngImg" 
+          rel="gmjl">购买记录</a><a class="pngImg" rel="yhpl">用户评论</a>
+        </div>
+        <!---商品描述---->
+        <div class="spms typeArea">
+          {$goods.goods_desc}
+        </div>
+        <!---购买记录---->
+        <div class="gmjl typeArea disNone">
+          <!-- #BeginLibraryItem "/library/bought_note_guide.lbi" -->
+          <div id="ECS_BOUGHT">{* ECSHOP 提醒您：动态载入bought_notes.lbi，显示当前商品的购买记录 *}{insert name='bought_notes' id=$id}</div>
+           <!-- #EndLibraryItem -->
+        </div>
+        <!---用户评论---->
+        <div class="yhpl typeArea disNone">
+          <!-- #BeginLibraryItem "/library/comments.lbi" -->
+          <div id="ECS_COMMENT"> {* ECSHOP 提醒您：动态载入comments_list.lbi，显示评论列表和评论表单 *}{insert name='comments' type=$type id=$id}</div>
+          <!-- #EndLibraryItem -->
+        </div>
+      </div>
     </div>
     <div class="productWrapButtom"></div>
   </div>
@@ -69,7 +90,6 @@ var now_time = {$now_time};
 <!-- {literal} -->
 onload = function(){
   changePrice();
-  fixpng();
   try { onload_leftTime(); }
   catch (e) {}
 }

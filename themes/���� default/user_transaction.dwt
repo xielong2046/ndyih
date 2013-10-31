@@ -606,6 +606,9 @@
         </table>
       <!--{/if} -->
     <!--#订单详情页 end-->
+
+
+<!-------------------------------------------------------->
     <!--#会员余额 start-->
       <!--{if $action eq "account_raply" || $action eq "account_log" || $action eq "account_deposit" || $action eq "account_detail"} -->
         <script type="text/javascript">

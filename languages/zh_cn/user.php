@@ -420,7 +420,7 @@ $_LANG['username_exist'] = '用户名 %s 已经存在';
 $_LANG['username_not_allow'] = '用户名 %s 不允许注册';
 $_LANG['confirm_register'] = '确认注册';
 
-$_LANG['agreement'] = "我已看过并接受《<a href=\"article.php?cat_id=-1\" style=\"color:blue\" target=\"_blank\">用户协议</a>》";
+$_LANG['agreement'] = "我已看过并接受《<a href=\"article.php?cat_id=-1\" style=\"color:#696868\" target=\"_blank\">用户协议</a>》";
 
 $_LANG['email_empty'] = 'email为空';
 $_LANG['email_invalid'] = '%s 不是合法的email地址';
@@ -554,16 +554,14 @@ $_LANG['affiliate_type'][-2] = '推荐订单分成';
 $_LANG['affiliate_codetype'] = '格式';
 
 $_LANG['affiliate_introduction'] = '分成模式介绍';
-$_LANG['affiliate_intro'][0] = '　　本网店为鼓励推荐新用户注册，现开展<b>推荐注册分成</b>活动，活动流程如下：
-
+$_LANG['affiliate_intro'][0] = '　　本网店为鼓励推荐新用户注册，现开展<b>推荐注册分成</b>活动，活动流程如下
 　　１、将本站提供给您的推荐代码，发送到论坛、博客上。
 　　２、访问者点击链接，访问网店。
 　　３、在访问者点击链接的 <b>%d%s</b> 内，若该访问者在本站注册，即认定该用户是您推荐的，您将获得等级积分 <b>%d</b> 的奖励 (当您的等级积分超过 <b>%d</b> 时，不再获得奖励)。
 　　４、该用户今后在本站的一切消费，您均能获得一定比例的提成。目前实行的提成总额为订单金额的 <b>%s</b> 、积分的 <b>%s</b> ，分配给您、推荐您的人等，具体分配规则请参阅 <b><a href="#myrecommend">我推荐的会员</a></b>。
 　　５、提成由管理员人工审核发放，请您耐心等待。
 　　６、您可以通过分成明细来查看您的介绍、分成情况。';
-$_LANG['affiliate_intro'][1] = '　　本网店为鼓励推荐新用户注册，现开展<b>推荐订单分成</b>活动，活动流程如下：
-
+$_LANG['affiliate_intro'][1] = '　　本网店为鼓励推荐新用户注册，现开展<b>推荐订单分成</b>活动，活动流程如下
 　　１、在浏览商品时，点击推荐此商品，获得推荐代码，将其发送到论坛、博客上。
 　　２、访问者点击链接，访问网店。
 　　３、在访问者点击链接的 <b>%d%s</b> 内，若该访问者在本站有订单，即认定该订单是您推荐的。
