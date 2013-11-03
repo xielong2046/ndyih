@@ -418,8 +418,14 @@ body{
   margin: 38px auto 0px 13px;
   background: url(./images/img.png) -146px -599px no-repeat;
 }
+#proListContainer .listOutWrap .disMode{
+  height: 27px;
+  line-height: 27px;
+  text-align: right;
+  margin: 10px 10px 0px 0px;
+}
 #proListContainer .listOutWrap ul.products{
-  margin:  27px 0px 0px 0px;
+  margin:  10px 0px 0px 0px;
   position: relative;
   left: 10px;
 }
@@ -1027,6 +1033,32 @@ body{
   font-family: '微软雅黑','microsoft Yahei','宋体';
   font-size: 12px;
   letter-spacing: 1px;
+}
+#proContainer .messBoard{
+  width: 500px;
+  min-height: 200px;
+  height: auto;
+  margin: 91px auto 0px auto;
+  padding-top: 89px;
+  background: url(./images/messboard_title.png) 164px 5px no-repeat;
+}
+#proContainer .messBoard .boxCenterList{
+  border-top: #a6a6a6 1px dashed;
+  border-bottom: #a6a6a6 1px dashed;
+  padding: 10px 0px 10px 0px;
+}
+#proContainer .messBoard .boxCenterList table{
+  line-height: 33px;
+  font-size: 13px;
+  margin-left: 30px;
+}
+#proContainer .messBoard .boxCenterList table .mess_sub_btn{
+  width: 74px;
+  height: 25px;
+  border: #a7a7a7 1px solid;
+  line-height: 25px;
+  background-color: #f8f8f8;
+  color: #858585;
 }
 #footer{
   width: 942px;
